@@ -5,6 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Jummah chart prepare</title>
 	<style type="text/css">
+button{
+    background-color:green;
+    font-size:10px;
+}
+button:hover{
+    background-color:white;
+    font-size:1px;
+    color:white;
+}
 		table{
 			font-family: arial,sans-serif;
 			border-collapse: collapse;
@@ -854,10 +863,15 @@
 			<th colspan="4" id="tntj">தாயிக்கள் தொடர்பான தகவல்களுக்கு - 9944191505</th>
 		</tr>
 <tr>
-   <th colspan="4"><img src="jummah.JPG" alt="Flowers in Chania" width="100%"></th>
+   <th colspan="4"><img src="jummah.JPG" alt="Flowers in Chania" style="max-width:100%";height:auto;></th>
 	</table>
-	<button onclick="print();">print</button>
+	<button onclick="printing();">print</button>
 </center>
-<img src="img_chania.jpg" alt="Flowers in Chania" width="460" height="345">
+<script>
+function printing(){
+   alert("Download PDF!");
+   print();
+}
+
 </body>
 </html>
