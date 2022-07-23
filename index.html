@@ -880,13 +880,14 @@ button:hover{
 	</table>
 </div>
 <center>
-	<button onclick="printing();">print</button>
+	<button onclick="printing();">DOWNLOAD PDF!</button>
 </center>
 <script>
+	var a=document.getElementById('content').addEventListener("click",function(event){event.preventdefault()});
 function printing(){
    alert("Download PDF!");
    print();
+   
 }
-</script>
 </body>
 </html>
