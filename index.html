@@ -2,7 +2,8 @@
 <html lang="ta">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+
 	<title>Jummah chart prepare</title>
 	<style type="text/css">
 button{
@@ -15,7 +16,7 @@ button{
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-	border-radius:20px;
+  border-radius: 20px;
 }
 button:hover{
     background-color:white;
@@ -23,25 +24,33 @@ button:hover{
     color:white;
     
 }
+/*body{
+	text-align:center;
+  margin:20px 20px 20px 20px;
+  padding:30px 50px;
+  border: 100px;
+}
 #content{
   
   text-align:center;
   margin:20px 20px 20px 20px;
   padding:30px 50px;
-  
- }
+  border: 100px;
+ }*/
 		table{
 			font-family: arial,sans-serif;
 			border-collapse: collapse;
-			width: 100%;
-			
+			border-width: 10px 20px;
+			width: 60%;
+			height: auto;
+			margin: 300px 1px 20px 200px;			
 		}
 		
 		td,th{
 			border: 2px solid black;
 			text-align: center;
 			font-weight: bolder;
-			font-size: 110%;
+			font-size: 80%;
 
 
 		}
@@ -51,30 +60,30 @@ button:hover{
 			background-color: green;
 			color: white;
 			font-weight: bolder;
-			font-size: 150%;
+			font-size: 100%;
 		}
 		#tntj{
 			
 			background-color: black;
 			color: white;
 			font-weight: bolder;
-			font-size: 25px;
+			font-size: 20px;
 			text-align: center;
 		}
 		select{
 			border: 1px solid white;
 			background-color: white;
 			text-align: center;
-			padding:10px;
+			padding:1px;
 			font-weight: bolder;
-			font-size: 120%;
+			font-size: 90%;
 		}
 	</style>
 </head>
 <body>
    <div id="content">
 	 	
-	<table lang="ta">
+	<table lang="ta" align="center">
 		<tr>
 			<th colspan="4" id="tntj">தமிழ்நாடு தவ்ஹீத் ஜமாஅத் - தஞ்சை தெற்கு மாவட்டம்
 ஜும்ஆ தாயிக்களின் விபரம் - 22.07.2022</th>
@@ -877,19 +886,18 @@ button:hover{
 			<th colspan="4" id="tntj">தாயிக்கள் தொடர்பான தகவல்களுக்கு - 9944191505</th>
 		</tr>
 <tr>
-   <th colspan="4"><img src="jummah.JPG" alt="Flowers in Chania" style="max-width:100%;height:auto;"></th>
+   <th colspan="4"><img src="jummah.JPG" alt="Jummah img" style="max-width:100%;height:auto;"></th>
 	</table>
 </div>
 <center>
 	<button onclick="printing();">DOWNLOAD PDF!</button>
 </center>
 <script>
-	
 function printing(){
    alert("Download PDF!");
    print();
    
 }
-	</script>
+</script>
 </body>
 </html>
