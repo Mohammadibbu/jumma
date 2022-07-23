@@ -82,7 +82,7 @@ button:hover{
 		}
 	</style>
 </head>
-<body>
+<body onoffline="offline()" ononline="online()">>
    <div id="content">
 	 	
 	<table lang="ta" align="center">
@@ -894,6 +894,12 @@ button:hover{
 	<button onclick="printing();">DOWNLOAD PDF!</button>
 </center>
 <script>
+   function online(){
+      alert("🌐Back online...");
+    }
+    function offline(){
+      alert("OOPS ! 😯\n Something Went Wrong!\nPlease,Check Your Network Connection....\n_ERR_004_CONN_");
+    }
 function printing(){
    alert("Download PDF!");
    print();
