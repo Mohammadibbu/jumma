@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
  
 
-	<title>Jummah chart prepare</title>
+	<title>Jummah chart</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tiro+Tamil:ital@1&display=swap" rel="stylesheet">
@@ -32,12 +32,7 @@ button:hover{
     color:white;
     
 }
-/*body{
-	text-align:center;
-  margin:20px 20px 20px 20px;
-  padding:30px 50px;
-  border: 100px;
-}
+/*	
 #content{
   
   text-align:center;
@@ -140,7 +135,7 @@ button:hover{
 		}
 	</style>
 </head>
-<body >
+<body onoffline="offline()" ononline="online()" >
    <div id="content" class="print-container">
 	 	
 	<table lang="ta" align="center" >
@@ -952,6 +947,12 @@ button:hover{
 	<button onclick="printing();">DOWNLOAD PDF!</button>
 </center>
 <script>
+function online(){
+      alert("🌐Back online...");
+    }
+    function offline(){
+      alert("OOPS ! 😯\n Something Went Wrong!\nPlease,Check Your Network Connection....\n_ERR_004_CONN_");
+    }
 function printing(){
    alert("Download PDF!");
    print();
