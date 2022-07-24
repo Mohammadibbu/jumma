@@ -1,0 +1,85 @@
+
+	
+		
+		 body{
+			-webkit-print-color-adjust: exact !important;
+			background: white !important;
+			align-items: center;
+			justify-content: center;
+			display: flex;
+			font-family: monospace;
+		}
+		.container{
+			position: relative;
+			margin-top: 100px;
+			width: 450px;
+			height: auto;
+			background:linear-gradient(to top,
+        violet,yellow,blue,red,indigo,green,powderblue,lightgreen) ;
+			border-radius: 10px;
+			display:none;
+		}
+		.login_form{
+			padding: 20px 40px;
+		}
+		label{
+			font-size: 18px;
+			margin: 5px 0;
+			
+			font-weight: bold;
+
+		}
+		.login_form input{
+			height: 40px;
+			width: 350px;
+			padding: 0 5px;
+			font-size: 18px;
+			outline: none;
+			border: 2px solid groove;
+			border-radius: 10px;
+		}
+		.login_form.font2{
+			margin-top: 45px 0 30px 0;
+		}
+		#submitbtn{
+			margin: 45px 0 30px 0;
+			height: 45px;
+			width: 365px;
+			font-size: 20px;
+			color: wheat;
+			outline: none;
+			cursor: pointer;
+			font-weight: bold;
+			background: blue;
+			border-radius: 25px;
+			border: 2px solid black;
+			transition-duration: .5s;
+		}
+       #submitbtn:hover{
+       	background: #151c61;
+       }
+       .login_form #check_uname,
+       .login_form #check_pwd{
+       	margin-top: 5px;
+       	width: 345px;
+       	font-size: 18px;
+       	color: red;
+       	background: rgba(255, 0, 0, 0.1);
+       	text-align: center;
+       	padding: 5px 8px;
+       	border-radius: 7px;
+       	border: 1px solid #EF9A9A;
+       	display: none;
+       }
+       #check,#check_uname,#check_pwd{
+       	display: none;
+       	margin-top: 5px;
+       	width: auto;
+       	font-size: 18px;
+       	color: white;
+       	padding: 5px 8px;
+       	background: red;
+       	text-align: center;
+       	border-radius: 10px;
+       	border: 2px solid #Ef9A9A;
+       }
