@@ -15,31 +15,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
 	<style type="text/css">
-#button{
-  background-color: #4CAF50;
-  border: 2px solid black;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  border-radius: 20px;
-}
-#button:hover{
-    background-color:red;
-    color:white;
-    border: 2px solid black;
-    
-}
-/*body{
-	text-align:center;
-  margin:20px 20px 20px 20px;
-  padding:30px 50px;
-  border: 100px;
-}*/
+
 #content,#button{
   
-  display: block;
+  display: none;
  }
 		table{
 			font-family: 'Tiro Tamil', serif;
@@ -169,8 +148,8 @@
    let userName=document.getElementById('uname');
    let pass_word=document.getElementById('password');
    // CHANGE HERE user name and pass word!
-   var admin= "tntj";
-   var pass= "admin";
+   var admin= "admin";
+   var pass= "tntj";
  	// body...
  	if (userName.value != admin || pass_word.value != pass ) {
  		
@@ -188,12 +167,12 @@
         pass_word.style.border = "5px solid green"
         valid.style.display = "none";
         alert("login successfully");
-        content_table.style.display = "block";
+        content_table.style.display = "block" ;
           btn_table.style.display = "block";
-          loginpage.style.display = "none";
+          loginpage.style.display= "none";
  	}
  	else{
-       alert("Warning !")
+       alert("SYSTEM ERROR ! !")
           
  	}
  }
