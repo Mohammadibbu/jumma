@@ -1,7 +1,7 @@
 
 		
 		 body{
-                        margin:50px 200px 50px;
+                        margin:50px auto 50px;
                         padding:0;
 			-webkit-print-color-adjust: exact !important;
 			background: white !important;
@@ -118,7 +118,7 @@
 		 #date_style{
 			font-family: 'Tiro Tamil', serif;
 			background-color: white;
-                        -webkit-appearance:none;
+                        
 			color: black;
 			font-weight: bolder;
 			font-size: 20px;
