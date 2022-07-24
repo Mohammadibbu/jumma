@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	
-	 <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
   
 	<title>Jummah chart prepare</title>
@@ -117,21 +117,26 @@
 </head>
 <body onoffline="offline()" ononline="online()">
 	
-	<div class="container">
+	<div class="container" id="form_container">
 		<div id="check" >Incorrect details !</div>
 	<form class="login_form" id="form" name="form">
-		
+	
+	<br>	
 	<label> user name</label>
+	<br>
 	<br>
 	<input type="text" name="uname" id="uname" placeholder="User Name" required autofocus>
 	<div id="check_uname">Please enter a valid userName !</div>
 	<br>
+	<br>
+	<br>
 	<label >password</label>
+	<br>
 	<br>
 	<input type="password" name="password" id="password" placeholder="*******" required autofocus>
 	<div id="check_pwd">Please Enter a valid password !</div>
 	<br>
-	<button type="submit" name="submit" id="submitbtn" onclick="validate()">Login</button>
+	<button type="submit" name="submit" id="submitbtn" onclick="validate()" >Login</button>
 </form>
 </div>
 <script type="text/javascript">
@@ -144,7 +149,7 @@
  	let content_table=document.getElementById('content');
 	let btn_table=document.getElementById('button');
 	let valid=document.getElementById('check');
-	let loginpage=document.getElementById('form');
+	let loginpage=document.getElementById('form_container');
    let userName=document.getElementById('uname');
    let pass_word=document.getElementById('password');
    // CHANGE HERE user name and pass word!
@@ -1003,5 +1008,8 @@ function online(){
     }
 
 </script>
+<!-- <footer>
+	<cite>tntj©copyright2022</cite>
+</footer> -->
 </body>
 </html>
