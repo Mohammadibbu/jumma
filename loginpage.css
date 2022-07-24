@@ -118,7 +118,7 @@
 		 #date_style{
 			font-family: 'Tiro Tamil', serif;
 			background-color: white;
--webkit-appearance:none;
+                        -webkit-appearance:none;
 			color: black;
 			font-weight: bolder;
 			font-size: 20px;
@@ -126,7 +126,7 @@
 			border-radius: 10px;
 			border: 3px solid red;
 		}
-		#date_style:hover{
+		#date_style:focus{
 			border: 4px solid blue;
 		}
 
