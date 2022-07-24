@@ -117,8 +117,8 @@
 		}
 		 #date_style{
 			font-family: 'Tiro Tamil', serif;
-			background-color: indigo;
-
+			background-color: white;
+-webkit-appearance:none;
 			color: black;
 			font-weight: bolder;
 			font-size: 20px;
