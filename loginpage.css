@@ -1,5 +1,7 @@
-
-	
+*{
+	padding: 0;
+	margin-right: 0;
+}
 		
 		 body{
 			-webkit-print-color-adjust: exact !important;
@@ -11,12 +13,14 @@
 		}
 		.container{
 			position: relative;
-			margin-top: 100px;
+			margin-top: 300px ;
 			width: 450px;
-			height: auto;
-			background:linear-gradient(to top,
-        violet,yellow,blue,red,indigo,green,powderblue,lightgreen) ;
-			border-radius: 10px;
+			height: 450px;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgq33d5epMSWknPtYn2cOrarXwP188_L8_yg&usqp=CAU) ;
+			background-repeat: no-repeat;
+			background-size: cover;
+            
+			border-radius: 20px;
 			display:block;
 		}
 
@@ -24,14 +28,15 @@
 			padding: 20px 40px;
 		}
 		label{
-			font-size: 18px;
+			font-size: 30px;
 			margin: 5px 0;
-			
+			color:white;
 			font-weight: bold;
+			font-family: arial,sans-serif;
 
 		}
 		.login_form input{
-			height: 40px;
+			height: 50px;
 			width: 350px;
 			padding: 0 5px;
 			font-size: 18px;
@@ -44,20 +49,22 @@
 		}
 		#submitbtn{
 			margin: 45px 0 30px 0;
-			height: 45px;
-			width: 365px;
-			font-size: 20px;
-			color: wheat;
+			height: 60px;
+			width: 200px;
+			font-size: 40px;
+			color: black;
 			outline: none;
-			cursor: pointer;
 			font-weight: bold;
-			background: blue;
+			cursor: pointer;
+			/*padding: 10px 5px 20px 5px;*/
+			font-family:arial,sans-serif;
+			background: yellow;
 			border-radius: 25px;
 			border: 2px solid black;
 			transition-duration: .5s;
 		}
        #submitbtn:hover{
-       	background: #2c41e6;
+       	background: #e8f07d;
        }
        .login_form #check_uname,
        .login_form #check_pwd{
