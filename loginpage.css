@@ -1,8 +1,7 @@
 
 		
 		 body{
-                        margin:50px auto 50px;
-                        padding:0;
+       
 			-webkit-print-color-adjust: exact !important;
 			background: white !important;
 			align-items: center;
@@ -10,7 +9,7 @@
 		}
 		.container{
 			position: absolute;
-			margin: 200px 50px 10px;
+			margin: auto;
 			width: 450px;
 			height: 450px;
             background: #171713;
