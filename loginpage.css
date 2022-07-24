@@ -5,21 +5,21 @@
 			background: white !important;
 			align-items: center;
 			justify-content: center;
-			display: flex;
-			font-family: monospace;
 		}
 		.container{
-			position: relative;
-			margin-top: 100px ;
+			position: absolute;
+			margin: 100px 150px 10px;
 			width: 450px;
 			height: 450px;
             background: #171713;
 			border-radius: 20px;
 			display:block;
+			box-shadow: 0 0 30px 20px greenyellow;
 		}
 
 		.login_form{
-			padding: 20px 40px;
+
+			padding: 20px 60px;
 		}
 		label{
 			font-size: 30px;
@@ -35,12 +35,15 @@
 			padding: 0 5px;
 			font-size: 18px;
 			outline: none;
-			border: 2px solid groove;
+			border: 2px solid  #2F96EF;
+			box-shadow: 0 0 5px 5px yellow;
 			border-radius: 10px;
 		}
-		.login_form.font2{
-			margin-top: 45px 0 30px 0;
+		.login_form input:focus{
+			/*border: 4px solid #2F96EF;*/
+			box-shadow: 0 0 5px 5px seagreen;
 		}
+		
 		#submitbtn{
 			margin: 45px 0 30px 0;
 			height: 60px;
@@ -57,7 +60,7 @@
 			border: 2px solid black;
 			transition-duration: .5s;
 		}
-       #submitbtn:hover{
+       #submitbtn:focus{
        	background: #e8f07d;
        }
        .login_form #check_uname,
@@ -73,13 +76,15 @@
        	border: 1px solid #EF9A9A;
        	display: none;
        }
-       #check,#check_uname,#check_pwd{
+       #check{
        	display: none;
+       	box-shadow: 0 0 2px 2px red;
        	margin-top: 5px;
        	width: auto;
        	font-size: 18px;
        	color: white;
-       	padding: 5px 8px;
+       	font-weight: bold;
+       	padding: 10px 8px;
        	background: red;
        	text-align: center;
        	border-radius: 10px;
@@ -100,3 +105,36 @@
     color:white;
     border: 2px solid black;
     }
+    #date{
+			font-family: 'Arima', cursive;
+			background-color: black;
+			color: white;
+			font-weight: bolder;
+			font-size: 20px;
+			text-align: center;
+		}
+		 #date_style{
+			font-family: 'Tiro Tamil', serif;
+			background-color: white;
+			color: black;
+			font-weight: bolder;
+			font-size: 20px;
+			cursor: pointer;
+
+			border-radius: 10px;
+			border: 3px solid red;
+		}
+		#date_style:hover{
+			border: 4px solid blue;
+		}
+
+#showpwd{
+		height: 20px;
+		width: 20px;
+		font-size: 20px;
+		outline: none;
+		box-shadow: none;
+		font-weight: normal;
+		cursor: pointer;
+
+}
