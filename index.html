@@ -6,8 +6,8 @@
 	 <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
  
-
-	<title>Jummah chart</title>
+  
+	<title>Jummah chart prepare</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tiro+Tamil:ital@1&display=swap" rel="stylesheet">
@@ -15,37 +15,37 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
 	<style type="text/css">
-button{
+#button{
   background-color: #4CAF50;
-  border: 2px solid red;
+  border: 2px solid black;
   color: white;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   border-radius: 20px;
 }
-button:hover{
+#button:hover{
     background-color:red;
     color:white;
-    border:3px Solid #4CAF50;
+    border: 2px solid black;
     
 }
-/*	
-#content{
-  
-  text-align:center;
+/*body{
+	text-align:center;
   margin:20px 20px 20px 20px;
   padding:30px 50px;
   border: 100px;
- }*/
+}*/
+#content,#button{
+  
+  display: block;
+ }
 		table{
 			font-family: 'Tiro Tamil', serif;
 			border-collapse: collapse;
 		    font-weight: bolder;
-			margin: 60px 60px 10px;		
+			margin: 60px 200px 10px;		
 		}
 		
 		td,th{
@@ -57,8 +57,6 @@ button:hover{
 			font-size: 80%;
 
 		}
-		
-
 		#head{
 			font-family: 'Tiro Tamil', serif;
 			background-color: green;
@@ -104,6 +102,7 @@ button:hover{
 			font-family: 'Tiro Tamil', serif !important;
 			border-collapse: collapse;	
 			font-weight: bolder;
+			margin: 200px 60px 100px !important;
 		}
 		
 		td,th{
@@ -129,14 +128,77 @@ button:hover{
 			padding: 20px !important;
 		}
 		
-			button{
-				display: none;
+			button,form{
+				display: none !important;
 			}
 
 		}
 	</style>
+	<link rel="stylesheet" type="text/css" href="loginpage.css">
 </head>
-<body onoffline="offline()" ononline="online()" >
+<body onoffline="offline()" ononline="online()">
+	
+	<div class="container">
+		<div id="check" >Incorrect details !</div>
+	<form class="login_form" id="form" name="form">
+		
+	<label> user name</label>
+	<br>
+	<input type="text" name="uname" id="uname" placeholder="User Name" required autofocus>
+	<div id="check_uname">Please enter a valid userName !</div>
+	<br>
+	<label >password</label>
+	<br>
+	<input type="password" name="password" id="password" placeholder="*******" required autofocus>
+	<div id="check_pwd">Please Enter a valid password !</div>
+	<br>
+	<button type="submit" name="submit" id="submitbtn" onclick="validate()">Login</button>
+</form>
+</div>
+<script type="text/javascript">
+	//validate the form
+	
+ 
+ 
+ document.getElementById("submitbtn").addEventListener("click",function(event){event.preventDefault()});
+ function validate() {
+ 	let content_table=document.getElementById('content');
+	let btn_table=document.getElementById('button');
+	let valid=document.getElementById('check');
+	let loginpage=document.getElementById('form');
+   let userName=document.getElementById('uname');
+   let pass_word=document.getElementById('password');
+   // CHANGE HERE user name and pass word!
+   var admin= "tntj";
+   var pass= "admin";
+ 	// body...
+ 	if (userName.value != admin || pass_word.value != pass ) {
+ 		
+        userName.style.border= "2px solid red";
+        pass_word.style.border = "2px solid red"
+        userName.focus();
+        valid.style.display = "block";
+        // alert("Incorrect Details")
+        userName.value='';
+        pass_word.value='';
+ 	}
+ 	else if (userName.value == admin || pass_word.value == pass ) {
+ 		
+        userName.style.border= "5px solid green";
+        pass_word.style.border = "5px solid green"
+        valid.style.display = "none";
+        alert("login successfully");
+        content_table.style.display = "block";
+          btn_table.style.display = "block";
+          loginpage.style.display = "none";
+ 	}
+ 	else{
+       alert("Warning !")
+          
+ 	}
+ }
+
+</script>
    <div id="content" class="print-container">
 	 	
 	<table lang="ta" align="center" >
@@ -945,19 +1007,22 @@ button:hover{
 	</table>
 </div>
 <center>
-	<button onclick="printing();">DOWNLOAD PDF!</button>
+	<button id="button" onclick="printing();">DOWNLOAD PDF!</button>
 </center>
 <script>
+function printing(){
+   alert("Download PDF!");
+   print();
+   location.reload();
+   
+}
 function online(){
       alert("🌐Back online...");
     }
     function offline(){
-      alert("OOPS ! 😯\n Something Went Wrong!\nPlease,Check Your Network Connection....\n_ERR_004_CONN_");
+      alert("OOPS ! 😯\n Something Went Wrong!\nPlease,Check Your Network Connection....\n_ERROR_CONNECTION_");
     }
-function printing(){
-   alert("Download PDF!");
-   print();
-}
+
 </script>
 </body>
 </html>
