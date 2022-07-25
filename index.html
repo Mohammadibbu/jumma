@@ -1044,10 +1044,15 @@ function showpassword() {
 	<button id="button" onclick="printing();">DOWNLOAD PDF!</button>
 </center>
 <script>
+function load(){
+    alert("hello after 10 second");
+    }
+
+}
 function printing(){
    alert("Download PDF!");
    print();
-   
+   setTimeout(load,10000);
    
 }
 function online(){
