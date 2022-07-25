@@ -6,7 +6,11 @@
 			background: white !important;
 			align-items: center;
 			justify-content: center;
+                       transition-duration:4s;
 		}
+               body:hover{
+                background: linear-gradient(to top, green,white,black,green,white,black);
+             }
 		.container{
 			position: absolute;
 			margin: auto;
@@ -16,8 +20,11 @@
 			border-radius: 20px;
 			display:block;
 			box-shadow: 0 0 30px 20px greenyellow;
+                        transition-duration:5s;
 		}
-
+         .container:hover{
+                    box-shadow: 0 0 30px 20px #ded15b;
+}
 		.login_form{
 
 			padding: 20px 60px;
