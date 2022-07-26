@@ -170,6 +170,7 @@
 	<br>
 	<br>
 	<input type="password" name="password" id="password" placeholder="*******" required autofocus>
+	<br>
 	<input type="checkbox" onclick="showpassword();" id="showpwd"><label id="showpwd">show password</label>
 	<div id="check_pwd">Please Enter a valid password !</div>
 	<br>
@@ -196,7 +197,9 @@
  	if (userName.value != admin || pass_word.value != pass ) {
  		userName.style.border= "2px solid red";
         pass_word.style.border = "2px solid red";
+        userName.style. animation = "shake 0.2s ease-in-out 0s 2";
         
+        pass_word.style.animation="shake 0.2s ease-in-out 0s 2";
         userName.style.outline= "2px solid red";
         pass_word.style.outline = "2px solid red";
         userName.focus();
