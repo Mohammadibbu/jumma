@@ -12,7 +12,7 @@
 		.container{
 			position: absolute;
 			margin: auto;
-			width: auto;
+			width: 455px;
 			height: auto;
             background: #171713;
 			border-radius: 20px;
@@ -141,4 +141,11 @@
 		font-weight: normal;
 		cursor: pointer;
 
+}
+@keyframes shake {
+  0% { margin-left: 0rem; }
+  25% { margin-left: 0.5rem; }
+  75% { margin-left: -0.5rem; }
+  100% { margin-left: 0rem; }
+  
 }
