@@ -149,3 +149,153 @@
   100% { margin-left: 0rem; }
   
 }
+		
+		 body{
+       
+			-webkit-print-color-adjust: exact !important;
+			background: white !important;
+			align-items: center;
+			justify-content: center;
+       
+		}
+          
+		.container{
+			position: absolute;
+			margin: auto;
+			width: 455px;
+			height: auto;
+            background: #171713;
+			border-radius: 20px;
+			display:block;
+			box-shadow: 0 0 30px 20px greenyellow;
+                       
+		}
+         
+		.login_form{
+
+			padding: 20px 60px;
+		}
+		label{
+			font-size: 30px;
+			margin: 5px 0;
+			color:white;
+			font-weight: bold;
+			font-family: arial,sans-serif;
+
+		}
+		.login_form input{
+			height: 50px;
+			width: 350px;
+			padding: 0 5px;
+			font-size: 18px;
+			outline: none;
+			border: 2px solid  #2F96EF;
+			box-shadow: 0 0 5px 5px yellow;
+			border-radius: 10px;
+		}
+		.login_form input:focus{
+			/*border: 4px solid #2F96EF;*/
+			box-shadow: 0 0 5px 5px seagreen;
+		}
+		
+		#submitbtn{
+			margin: 45px 0 30px 0;
+			height: 60px;
+			width: 200px;
+			font-size: 40px;
+			color: black;
+			outline: none;
+			font-weight: bold;
+			cursor: pointer;
+			/*padding: 10px 5px 20px 5px;*/
+			font-family:arial,sans-serif;
+			background: yellow;
+			border-radius: 25px;
+			border: 2px solid black;
+			transition-duration: .5s;
+		}
+       #submitbtn:focus{
+       	background: #e8f07d;
+       }
+       .login_form #check_uname,
+       .login_form #check_pwd{
+       	margin-top: 5px;
+       	width: 345px;
+       	font-size: 18px;
+       	color: red;
+       	background: rgba(255, 0, 0, 0.1);
+       	text-align: center;
+       	padding: 5px 8px;
+       	border-radius: 7px;
+       	border: 1px solid #EF9A9A;
+       	display: none;
+       }
+       #check{
+       	display: none;
+       	box-shadow: 0 0 2px 2px red;
+       	margin-top: 5px;
+       	width: auto;
+       	font-size: 18px;
+       	color: white;
+       	font-weight: bold;
+       	padding: 10px 8px;
+       	background: red;
+       	text-align: center;
+       	border-radius: 10px;
+       	border: 2px solid #Ef9A9A;
+       }
+#button{
+  background-color: #4CAF50;
+  border: 2px solid black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 20px;
+}
+#button:hover{
+    background-color:red;
+    color:white;
+    border: 2px solid black;
+    }
+    #date{
+			font-family: 'Arima', cursive;
+			background-color: black;
+			color: white;
+			font-weight: bolder;
+			font-size: 25px;
+			text-align: center;
+		}
+		 #date_style{
+			font-family: 'Tiro Tamil', serif;
+			background-color: white;
+                        
+			color: black;
+			font-weight: bolder;
+			font-size: 20px;
+			cursor: pointer;
+			border-radius: 10px;
+			border: 3px solid red;
+		}
+		#date_style:focus{
+			border: 4px solid blue;
+		}
+
+#showpwd{
+		height: 20px;
+		width: 20px;
+		font-size: 20px;
+		outline: none;
+		box-shadow: none;
+		font-weight: normal;
+		cursor: pointer;
+
+}
+@keyframes shake {
+  0% { margin-left: 0rem; }
+  25% { margin-left: 0.5rem; }
+  75% { margin-left: -0.5rem; }
+  100% { margin-left: 0rem; }
+  
+}
