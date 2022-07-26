@@ -95,6 +95,20 @@
        	border-radius: 10px;
        	border: 2px solid #Ef9A9A;
        }
+#success{
+       	display: none;
+       	box-shadow: 0 0 2px 2px #37eb23;
+       	margin-top: 5px;
+       	width: auto;
+       	font-size: 18px;
+       	color: white;
+       	font-weight: bold;
+       	padding: 10px 8px;
+       	background: #29f013;
+       	text-align: center;
+       	border-radius: 10px;
+       	border: 2px solid #1e7d14;
+       }
 #button{
   background-color: #4CAF50;
   border: 2px solid black;
