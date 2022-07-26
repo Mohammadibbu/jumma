@@ -43,19 +43,21 @@
 			font-family: 'Tiro Tamil', serif;
 			background-color: green;
 			color: white;
-			font-weight: bolder;
-			font-size: 100%;
+			font-weight: 60;
+			font-size: 25px;
 		}
 		#tntj{
 			font-family: 'Arima', cursive;
 			background-color: black;
 			color: white;
 			font-weight: bolder;
-			font-size: 30px;
+			font-size: 25px;
 			text-align: center;
 			padding: 20px 15px 1px;
 		}
-		
+		img{
+			border-radius: 20px;
+		}
 		select{
 			border: 1px solid white;
 			background-color: white;
@@ -84,9 +86,9 @@
 		table{
 			font-family: 'Tiro Tamil', serif !important;
 			border-collapse: collapse !important;	
-			font-weight: bolder !important;
+			/*font-weight: bolder !important;*/
 			margin: 100px 70px 100px !important;
-                            background-color: white !important;
+      background-color: white !important;
 		}
 		
 		td,th{
@@ -101,18 +103,14 @@
 		#head {
 			font-family: 'Tiro Tamil', serif !important;
 			padding: 10px !important;
+			margin: 3px 2px;
 			font-weight: bolder !important;
-			font-size: 100% !important;
-                       width:5% !important;
+			font-size: 20px !important;
+      width:auto !important;
             
 		}
-      .head   {
-              font-family: 'Tiro Tamil', serif !important;
-	     padding: 10px !important;
-		font-weight: bolder !important;
-		font-size: 120% !important;
-                 width:auto !important;
-}
+ 
+
 		#tntj{
 		    font-family: 'Arima', cursive !important;
 			font-weight: bolder !important;
@@ -125,7 +123,7 @@
 			background-color: black !important;
 			color: white !important;
 			font-weight: bolder;
-			font-size: 20px;
+			font-size: 30px !important;
 			border: 2px solid black !important;
 		}
     #date{
@@ -133,9 +131,9 @@
 			background-color: black;
 			color: white;
 			font-weight: bolder;
-			font-size: 25px;
+			font-size: 30px !important;
 			text-align: center;
-      margin:0 auto !important;
+      margin-top: 0;
 		}
 
 			button,form,footer{
@@ -236,7 +234,7 @@ function showpassword() {
 	 	
 	<table lang="ta" align="center" >
 		<tr>
-			<th colspan="4" id="tntj" ><strong>தமிழ்நாடு தவ்ஹீத் ஜமாஅத் - தஞ்சை தெற்கு மாவட்டம் ஜும்ஆ தாயிக்களின் விபரம்.</strong></th>
+			<th colspan="4" id="tntj" ><img src="jummahheading.JPG" alt="தமிழ்நாடு தவ்ஹீத் ஜமாஅத் - தஞ்சை தெற்கு மாவட்டம் ஜும்ஆ தாயிக்களின் விபரம்." style="width:100%;height:150px;"></th>
 		</tr>
 		<tr>
 			<th colspan="4" id="date"><strong>ஜும்மா நாள் :</strong><input type="date" id="date_style" >
@@ -244,9 +242,9 @@ function showpassword() {
 		</tr>
 		 <tr id="head" >
 			<th>S.NO</th>
-			<th class="head">கிளை/பொறுப்பாளர்</th>
-			<th class="head">நேரம்</th>
-			<th  class="head">தாஃயி பெயர்/தொடர்புக்கு</th>
+			<th >கிளை/பொறுப்பாளர்</th>
+			<th >நேரம்</th>
+			<th >தாஃயி பெயர்/தொடர்புக்கு</th>
 			
 		</tr>
 		<tr>
@@ -1041,6 +1039,7 @@ function showpassword() {
 		</tr>
 <tr>
    <th colspan="4" style="background-color: #312542;"><img src="jummah.JPG" alt="Jummah img" style="max-width:100%;height:auto;"></th>
+ </tr>
 	</table>
 </div>
 <center>
