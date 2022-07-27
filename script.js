@@ -5,10 +5,11 @@
  	let content_table=document.getElementById('content');
 	let btn_table=document.getElementById('button');
 	let invalid=document.getElementById('check');
-        let valid=document.getElementById('success');
+  let valid=document.getElementById('success');
 	let loginpage=document.getElementById('form_container');
    let userName=document.getElementById('uname');
    let pass_word=document.getElementById('password');
+   let loginbtn=document.getElementById('submitbtn');
    // CHANGE HERE user name and pass word!
    var admin= "admin";
    var pass= "tntj";
@@ -24,6 +25,7 @@
         userName.style. animation = "shake 0.2s ease-in-out 0s 2";
         pass_word.style.animation="shake 0.2s ease-in-out 0s 2";
         invalid.style.animation= "shake 0.2s ease-in-out 0s 2";
+         loginbtn.style.background ="red";
        invalid.style.display = "block";
   //login failed Error message
 
@@ -33,6 +35,7 @@
         pass_word.style.border = "none";
         userName.style.outline= "none";
         pass_word.style.outline = "none";
+         loginbtn.style.background ="yellow";
        userName.focus();
   }
      setTimeout(loginfailed,2000);
@@ -47,12 +50,16 @@
         userName.style.outline= "2px solid green";
         pass_word.style.outline = "2px solid green";
         valid.style.display = "block";
+         loginbtn.style.color ="white";
+         loginbtn.style.background ="#29f013";
 
         valid.style. animation = "shake 1s ease-in-out 0s 5";
         valid.focus();
         //alert("✳️👍Login Successfully👍✳️");
         //login success message
         function loginsuccess(){
+          loginbtn.style.color ="black";
+          loginbtn.style.background ="yellow";
         content_table.style.display = "block" ;
           btn_table.style.display = "block";
           loginpage.style.display= "none";
