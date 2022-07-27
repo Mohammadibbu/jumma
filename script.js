@@ -93,7 +93,7 @@ function printing(){
    alert("Download PDF!");
    
    print();
-   setTimeout(load,30000);
+   setTimeout(load,50000);
    }
    //on online
 function online(){
