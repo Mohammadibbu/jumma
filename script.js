@@ -89,8 +89,6 @@ function load(){
     }
 //print the page
 function printing(){
-   // alert("Download PDF!");
-   // function prompt1(){
       let pwd=prompt("Please Enter your password To download 'PDF' File");
       //confirmation password
       if (pwd!="tntj")
@@ -106,9 +104,8 @@ function printing(){
         print();
        setTimeout(load,50000);
       }
-   
-   
    }
+   
    //on online
 function online(){
       alert("🌐Back online...");
