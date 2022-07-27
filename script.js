@@ -11,23 +11,22 @@
    let pass_word=document.getElementById('password');
    let loginbtn=document.getElementById('submitbtn');
    // CHANGE HERE user name and pass word!
-   var admin= "admin";
-   var pass= "tntj";
+   var admin= "";
+   var pass= "";
  	// check the user name and password...
  	if (userName.value != admin || pass_word.value != pass ) {
-      //animation
-        userName.style. animation = "shake 0.2s ease-in-out 0s 2";
-        pass_word.style.animation="shake 0.2s ease-in-out 0s 2";
-        invalid.style.animation= "shake 0.2s ease-in-out 0s 2";
     // border colors
- 	userName.style.border= "2px solid red";
+ 		userName.style.border= "2px solid red";
         pass_word.style.border = "2px solid red";
         // outline colors
         userName.style.outline= "2px solid red";
         pass_word.style.outline = "2px solid red";
-        
-        loginbtn.style.background ="red";
-        invalid.style.display = "block";
+        //animation
+        userName.style. animation = "shake 0.2s ease-in-out 0s 2";
+        pass_word.style.animation="shake 0.2s ease-in-out 0s 2";
+        invalid.style.animation= "shake 0.2s ease-in-out 0s 2";
+         loginbtn.style.background ="red";
+       invalid.style.display = "block";
   //login failed Error message
 
     function loginfailed(){
@@ -41,8 +40,8 @@
   }
      setTimeout(loginfailed,2000);
         // alert("Incorrect Details")
-        userName.value='';
-        pass_word.value='';
+        userName.value='admin';
+        pass_word.value='tntj';
  	}
  	else if (userName.value == admin || pass_word.value == pass ) {
  		
@@ -90,10 +89,25 @@ function load(){
     }
 //print the page
 function printing(){
-   alert("Download PDF!");
+   // alert("Download PDF!");
+   // function prompt1(){
+      let pwd=prompt("Please Enter your password To download 'PDF' File");
+      //confirmation password
+      if (pwd!="tntj")
+      {
+        if (confirm("INCORRECT PASSWORD ! \n Press 'OK' to Re - Enter the password..")) {
+          printing();
+        }else{
+          alert("If you want to Download PDF file,Please Enter the correct password...");
+        }
+        
+      }else{
+        alert(" Ready to Previewing your PDF File")
+        print();
+       setTimeout(load,50000);
+      }
    
-   print();
-   setTimeout(load,50000);
+   
    }
    //on online
 function online(){
