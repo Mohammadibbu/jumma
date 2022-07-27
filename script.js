@@ -89,18 +89,18 @@ function load(){
     }
 //print the page
 function printing(){
-      let pwd=prompt("Please Enter your password To download 'PDF' File");
+      let pwd=prompt("Please Enter Password To download 'PDF' File");
       //confirmation password
       if (pwd!= "tntj"){
         
-        if (confirm("INCORRECT PASSWORD ! \n Press 'OK' to Re - Enter the password..")) {
+        if (confirm("ℹ️INCORRECT PASSWORD❗  \n Press 'OK' to Re - Enter the password..")) {
           printing();
         }else{
-          alert("If you want to Download PDF file,Please Enter the correct password...");
+          alert("If You Want To Download PDF file,Please Enter The Correct Password...");
         }
         
       }else{
-        alert("_AUTHENTICATED SUCCESSFULLY_\t\t\n\nReady to Previewing your PDF File...")
+        alert("_AUTHENTICATED SUCCESSFULLY_✔️\n\nReady to Previewing your PDF File...")
         print();
        setTimeout(load,50000);
       }
