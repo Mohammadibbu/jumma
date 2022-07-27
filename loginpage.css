@@ -264,7 +264,7 @@
 		#tntj{
 		    font-family: 'Arima', cursive !important;
 			font-weight: bolder !important;
-			font-size: 27px !important;
+			font-size: 25px !important;
 			text-align: left !important;
 			padding: 20px !important;
 		}
@@ -274,7 +274,7 @@
 			color: white !important;
 			text-align: left !important;
 			font-weight: bolder;
-			font-size: 30px !important;
+			font-size: 25px !important;
 			border: 2px solid black !important;
                         -webkit-appearance: none !important;
 		}
@@ -283,7 +283,7 @@
 			background-color: black;
 			color: white;
 			font-weight: bolder;
-			font-size: 30px !important;
+			font-size: 25px !important;
 			text-align: left !important;
                         margin-top: 0;
 		}
