@@ -63,12 +63,9 @@
 				background: yellow;
 				border-radius: 25px;
 				border: 2px solid black;
-				transition-duration: .5s;
 		}
-       #submitbtn:focus{
-       	background: #e8f07d;
-       }
-       .login_form #check_uname,
+     
+        .login_form #check_uname,
        .login_form #check_pwd{
        	margin-top: 5px;
        	width: 345px;
@@ -116,7 +113,7 @@
   padding: 15px 32px;
   text-align: center;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 10px 20px;
   border-radius: 20px;
 }
 #button:hover{
@@ -135,7 +132,7 @@
 		 #date_style{
 			font-family: 'Tiro Tamil', serif;
 			background-color: white;
-                        text-align:center;
+      text-align:center;
 			color: black;
 			font-weight: bolder;
 			font-size: 20px;
@@ -177,12 +174,12 @@
 			border-collapse: collapse;
 		    font-weight: bolder;
                           background-color:white;
-			margin: 3px 5px 5px 3px;		
+			margin: 10px 50px 100px 50px;		
 		}
 		
 		td,th{
-                     font-family: 'Tiro Tamil', serif;
-            
+            font-family: 'Tiro Tamil', serif;
+            font-weight: bolder;
 			border: 2px solid black;
 			text-align: left;
 			font-weight: bolder;
@@ -193,7 +190,7 @@
 			font-family: 'Tiro Tamil', serif;
 			background-color: green;
 			color: white;
-			font-weight: 60 !important;
+			font-weight: 60;
 			font-size: 25px;
 		}
 		#tntj{
@@ -246,7 +243,7 @@
 			border: 2px solid black;
 			text-align: left;
 			/*font-weight: bolder;*/
-			font-size: 110% !important;
+			font-size: 120%;
 
 		}
 		
@@ -264,28 +261,27 @@
 		#tntj{
 		    font-family: 'Arima', cursive !important;
 			font-weight: bolder !important;
-			font-size: 25px !important;
-			text-align: left !important;
+			font-size: 30px !important;
+			text-align: center !important;
 			padding: 20px !important;
 		}
 		#date_style{
 			font-family: 'Tiro Tamil', serif;
 			background-color: black !important;
 			color: white !important;
-			text-align: left !important;
+			text-align: center !important;
 			font-weight: bolder;
-			font-size: 25px !important;
+			font-size: 30px !important;
 			border: 2px solid black !important;
-                        -webkit-appearance: none !important;
 		}
     #date{
 			font-family: 'Arima', cursive;
 			background-color: black;
 			color: white;
 			font-weight: bolder;
-			font-size: 25px !important;
-			text-align: left !important;
-                        margin-top: 0;
+			font-size: 30px !important;
+			text-align: center !important;
+      margin-top: 0;
 		}
 
 			button,form,footer{
@@ -294,4 +290,7 @@
                 .container{
                        display: none !important;
                             }
+#date_style{
+-webkit-appearance: none !important;
+}
 		}
