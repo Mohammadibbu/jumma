@@ -116,7 +116,7 @@
   margin: 10px 20px;
   border-radius: 20px;
 }
-#button:hover{
+#button:onfocus{
     background-color:red;
     color:white;
     border: 2px solid black;
@@ -132,7 +132,7 @@
 		 #date_style{
 			font-family: 'Tiro Tamil', serif;
 			background-color: white;
-      text-align:center;
+                        text-align:center;
 			color: black;
 			font-weight: bolder;
 			font-size: 20px;
