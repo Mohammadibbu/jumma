@@ -234,7 +234,7 @@
 			font-family: 'Tiro Tamil', serif !important;
 			border-collapse: collapse !important;	
 			/*font-weight: bolder !important;*/
-			margin: 100px 70px 100px !important;
+			margin: 90px 60px 90px !important;
       background-color: white !important;
 		}
 		
@@ -243,7 +243,7 @@
 			border: 2px solid black;
 			text-align: left;
 			/*font-weight: bolder;*/
-			font-size: 120%;
+			font-size: 110% !important;
 
 		}
 		
