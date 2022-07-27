@@ -181,8 +181,8 @@
 		}
 		
 		td,th{
-            font-family: 'Tiro Tamil', serif;
-            font-weight: bolder;
+                     font-family: 'Tiro Tamil', serif;
+            
 			border: 2px solid black;
 			text-align: left;
 			font-weight: bolder;
@@ -193,7 +193,7 @@
 			font-family: 'Tiro Tamil', serif;
 			background-color: green;
 			color: white;
-			font-weight: 60;
+			font-weight: 60 !important;
 			font-size: 25px;
 		}
 		#tntj{
@@ -246,7 +246,7 @@
 			border: 2px solid black;
 			text-align: left;
 			/*font-weight: bolder;*/
-			font-size: 120%;
+			font-size: 110% !important;
 
 		}
 		
