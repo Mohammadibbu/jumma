@@ -15,18 +15,19 @@
    var pass= "tntj";
  	// check the user name and password...
  	if (userName.value != admin || pass_word.value != pass ) {
+      //animation
+        userName.style. animation = "shake 0.2s ease-in-out 0s 2";
+        pass_word.style.animation="shake 0.2s ease-in-out 0s 2";
+        invalid.style.animation= "shake 0.2s ease-in-out 0s 2";
     // border colors
- 		userName.style.border= "2px solid red";
+ 	userName.style.border= "2px solid red";
         pass_word.style.border = "2px solid red";
         // outline colors
         userName.style.outline= "2px solid red";
         pass_word.style.outline = "2px solid red";
-        //animation
-        userName.style. animation = "shake 0.2s ease-in-out 0s 2";
-        pass_word.style.animation="shake 0.2s ease-in-out 0s 2";
-        invalid.style.animation= "shake 0.2s ease-in-out 0s 2";
-         loginbtn.style.background ="red";
-       invalid.style.display = "block";
+        
+        loginbtn.style.background ="red";
+        invalid.style.display = "block";
   //login failed Error message
 
     function loginfailed(){
