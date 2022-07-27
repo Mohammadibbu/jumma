@@ -100,7 +100,7 @@ function printing(){
         }
         
       }else{
-        alert(" Ready to Previewing your PDF File")
+        alert("_AUTHENTICATED SUCCESSFULLY_\t\t\n\nReady to Previewing your PDF File...")
         print();
        setTimeout(load,50000);
       }
@@ -112,5 +112,5 @@ function online(){
     }
     //on offline
     function offline(){
-      alert("OOPS ! 😯\nSomething Went Wrong!\nPlease,Check Your Network Connection....\n_ERROR_CONNECTION_");
+      alert("OOPS ! 😯\n Something Went Wrong!\nPlease,Check Your Network Connection....\n_ERROR_CONNECTION_");
     }
