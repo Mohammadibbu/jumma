@@ -7,13 +7,13 @@
 			align-items: center;
 			justify-content: center;
                        /* min-width:960px;*/
-                         border:10px solid black;
+                         
        
 		}
 
          .container{
 			position: absolute;
-			margin: 400px 270px 100px;
+			margin: 350px 270px 100px;
 			width: 485px;
 			height: 500px;
                         background: #171713;
