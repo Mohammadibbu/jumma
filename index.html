@@ -123,8 +123,8 @@
 			font-family: 'Tiro Tamil', serif;
 			background-color: black !important;
 			color: white !important;
+			text-align: center !important;
 			font-weight: bolder;
-                       text-align: center !important;
 			font-size: 30px !important;
 			border: 2px solid black !important;
 		}
@@ -204,12 +204,12 @@
         pass_word.style.animation="shake 0.2s ease-in-out 0s 2";
         userName.style.outline= "2px solid red";
         pass_word.style.outline = "2px solid red";
-        
+        invalid.style.animation= "shake 0.2s ease-in-out 0s 2";
        invalid.style.display = "block";
         
 
 
-    function hide(){
+    function loginfailed(){
         invalid.style.display = "none";
         userName.style.border= "none";
         pass_word.style.border = "none";
@@ -217,7 +217,7 @@
         pass_word.style.outline = "none";
        userName.focus();
   }
-     setTimeout(hide,2000);
+     setTimeout(loginfailed,2000);
         // alert("Incorrect Details")
         userName.value='';
         pass_word.value='';
@@ -226,14 +226,20 @@
  		
         userName.style.border= "4px solid #29f013";
         pass_word.style.border = "4px solid #29f013";
+        userName.style.outline= "2px solid green";
+        pass_word.style.outline = "2px solid green";
         valid.style.display = "block";
+
+        // new
+        valid.style. animation = "shake 1s ease-in-out 0s 5";
+        valid.focus();
         //alert("✳️👍Login Successfully👍✳️");
-        function show(){
+        function loginsuccess(){
         content_table.style.display = "block" ;
           btn_table.style.display = "block";
           loginpage.style.display= "none";
         }
-      setTimeout(show,5000);
+      setTimeout(loginsuccess,5000);
  	}
  	else{
        alert("SYSTEM ERROR ! !")
@@ -1084,7 +1090,7 @@ function online(){
 
 </script>
  <footer>
-	<cite style="font-weight:bolder;">©️ Copywrite - TNTJ THANJAI SOUTH 2022</cite>
+	<cite style="font-weight:bolder;">tntj©copyright2022</cite>
 </footer> 
 </body>
 </html>
