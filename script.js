@@ -64,7 +64,7 @@
           btn_table.style.display = "block";
           loginpage.style.display= "none";
         }
-      setTimeout(loginsuccess,5000);
+      setTimeout(loginsuccess,2000);
  	}
   //unnecessary part
  	else{
