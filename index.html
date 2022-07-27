@@ -2,164 +2,34 @@
 <html lang="ta">
 <head>
 	<meta charset="utf-8">
-	
-	 <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-  
-	<title>Jummah chart</title>
+   <title>Jummah chart</title>
+  <!--  login page loading style -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- google fonts link -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- font style Tiro -->
 <link href="https://fonts.googleapis.com/css2?family=Tiro+Tamil:ital@1&display=swap" rel="stylesheet">
 
 <!-- <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet"> -->
 
 <link href="https://fonts.googleapis.com/css2?family=Arima:wght@700&display=swap" rel="stylesheet">
-
-	<style type="text/css">
-
-#content,#button{
-  
-  display: none;
- }
-		table{
-			font-family: 'Tiro Tamil', serif;
-			border-collapse: collapse;
-		    font-weight: bolder;
-                          background-color:white;
-			margin: 3px 5px 5px 3px;		
-		}
-		
-		td,th{
-            font-family: 'Tiro Tamil', serif;
-            font-weight: bolder;
-			border: 2px solid black;
-			text-align: left;
-			font-weight: bolder;
-			font-size: 100%;
-
-		}
-		#head{
-			font-family: 'Tiro Tamil', serif;
-			background-color: green;
-			color: white;
-			font-weight: 60;
-			font-size: 25px;
-		}
-		#tntj{
-			font-family: 'Arima', cursive;
-			background-color: black;
-			color: white;
-			font-weight: bolder;
-			font-size: 25px;
-			text-align: center;
-			padding: 20px 15px 1px;
-		}
-		img{
-			border-radius: 20px;
-		}
-		select{
-			border: 1px solid white;
-			background-color: white;
-			text-align: left;
-			padding:5px;
-			font-weight: bolder;
-			font-size: 90%;
-			-webkit-appearance: none;
-			cursor: pointer;
-			font-family: 'Tiro Tamil', serif;
-		}
-		select:hover{
-			background-color: #ff1212;
-			border-radius: 20px;
-			border: 2px dashed black;
-
-		}
-		body{
-			-webkit-print-color-adjust: exact !important;
-		}
-		@media print{
-			 
-			@page{
-				size: a3;
-			}
-		table{
-			font-family: 'Tiro Tamil', serif !important;
-			border-collapse: collapse !important;	
-			/*font-weight: bolder !important;*/
-			margin: 100px 70px 100px !important;
-      background-color: white !important;
-		}
-		
-		td,th{
-			font-family: 'Tiro Tamil', serif !important;
-			border: 2px solid black;
-			text-align: left;
-			/*font-weight: bolder;*/
-			font-size: 120%;
-
-		}
-		
-		#head {
-			font-family: 'Tiro Tamil', serif !important;
-			padding: 10px !important;
-			margin: 3px 2px;
-			font-weight: bolder !important;
-			font-size: 20px !important;
-      width:auto !important;
-            
-		}
- 
-
-		#tntj{
-		    font-family: 'Arima', cursive !important;
-			font-weight: bolder !important;
-			font-size: 30px !important;
-			text-align: center !important;
-			padding: 20px !important;
-		}
-		#date_style{
-			font-family: 'Tiro Tamil', serif;
-			background-color: black !important;
-			color: white !important;
-			text-align: center !important;
-			font-weight: bolder;
-			font-size: 30px !important;
-			border: 2px solid black !important;
-		}
-    #date{
-			font-family: 'Arima', cursive;
-			background-color: black;
-			color: white;
-			font-weight: bolder;
-			font-size: 30px !important;
-			text-align: center !important;
-      margin-top: 0;
-		}
-
-			button,form,footer{
-				display: none !important;
-			}
-                .container{
-                       display: none !important;
-                            }
-#date_style{
--webkit-appearance: none !important;
-}
-		}
-	</style>
+<!-- style for whole page -->
 	<link rel="stylesheet" type="text/css" href="loginpage.css">
 </head>
 <body onoffline="offline()" ononline="online()">
-	
+	<!-- loginpage -->
 	<div class="container" id="form_container">
-                 <div id="success" >Login Successfully...  <i class="fa fa-spinner fa-spin"></i></div>
+		<!-- success message -->
+    <div id="success" >Login Successfully...  <i class="fa fa-spinner fa-spin"></i></div>
+    <!-- failed ! message -->
 		<div id="check" >Incorrect details ! <i class="fa fa-refresh fa-spin"></i></div>
+		<!-- form starting -->
 	<form class="login_form" id="form" name="form">
 	<br>
-
-	<label> User Name</label>
+  <label> User Name</label>
 	<br>
 	<br>
 	<input type="text" name="uname" id="uname" placeholder="User Name" required autofocus>
@@ -178,82 +48,10 @@
 	<button type="submit" name="submit" id="submitbtn" onclick="validate()" >Login</button>
 </form>
 </div>
-<script type="text/javascript">
-	//validate the form
-	
- 
- 
- document.getElementById("submitbtn").addEventListener("click",function(event){event.preventDefault()});
- function validate() {
- 	let content_table=document.getElementById('content');
-	let btn_table=document.getElementById('button');
-	let invalid=document.getElementById('check');
-        let valid=document.getElementById('success');
-	let loginpage=document.getElementById('form_container');
-   let userName=document.getElementById('uname');
-   let pass_word=document.getElementById('password');
-   // CHANGE HERE user name and pass word!
-   var admin= "admin";
-   var pass= "tntj";
- 	// body...
- 	if (userName.value != admin || pass_word.value != pass ) {
- 		userName.style.border= "2px solid red";
-        pass_word.style.border = "2px solid red";
-        userName.style.outline= "2px solid red";
-        pass_word.style.outline = "2px solid red";
-        userName.style. animation = "shake 0.2s ease-in-out 0s 2";
-        pass_word.style.animation="shake 0.2s ease-in-out 0s 2";
-        invalid.style.animation= "shake 0.2s ease-in-out 0s 2";
-       invalid.style.display = "block";
-        
-
-
-    function loginfailed(){
-        invalid.style.display = "none";
-        userName.style.border= "none";
-        pass_word.style.border = "none";
-        userName.style.outline= "none";
-        pass_word.style.outline = "none";
-       userName.focus();
-  }
-     setTimeout(loginfailed,2000);
-        // alert("Incorrect Details")
-        userName.value='';
-        pass_word.value='';
- 	}
- 	else if (userName.value == admin || pass_word.value == pass ) {
- 		
-        userName.style.border= "4px solid #29f013";
-        pass_word.style.border = "4px solid #29f013";
-        userName.style.outline= "2px solid green";
-        pass_word.style.outline = "2px solid green";
-        valid.style.display = "block";
-
-        // new
-        valid.style. animation = "shake 1s ease-in-out 0s 5";
-        valid.focus();
-        //alert("✳️👍Login Successfully👍✳️");
-        function loginsuccess(){
-        content_table.style.display = "block" ;
-          btn_table.style.display = "block";
-          loginpage.style.display= "none";
-        }
-      setTimeout(loginsuccess,5000);
- 	}
- 	else{
-       alert("SYSTEM ERROR ! !")
-          
- 	}
- }
-function showpassword() {
-  var x = document.getElementById("password");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
+<script type="text/javascript" src="script.js">
+	//form validation and javascript content
 </script>
+<!-- table -->
    <div id="content" class="print-container">
 	 	
 	<table lang="ta" align="center" >
@@ -1066,28 +864,10 @@ function showpassword() {
  </tr>
 	</table>
 </div>
+<!-- END OF THE TABLE -->
 <center>
 	<button id="button" onclick="printing();">DOWNLOAD PDF!</button>
 </center>
-<script>
-function load(){
-    alert("_SESSION_EXPIRED_\n\n_PLEASE RE-LOGIN🔄_");
-    location.reload();
-    }
-function printing(){
-   alert("Download PDF!");
-   
-   print();
-   setTimeout(load,30000);
-   }
-function online(){
-      alert("🌐Back online...");
-    }
-    function offline(){
-      alert("OOPS ! 😯\n Something Went Wrong!\nPlease,Check Your Network Connection....\n_ERROR_CONNECTION_");
-    }
-
-</script>
  <footer>
 	<cite style="font-weight:bolder;">  ©️ Copywrite - TNTJ THANJAI SOUTH©️2022</cite>
 </footer> 
