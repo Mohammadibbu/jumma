@@ -9,23 +9,8 @@
                        /* min-width:960px;*/
        
 		}
-.bg-image {
-  /* The image used */
-  background: blue;
 
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-		.container{
+         .container{
 			position: absolute;
 			margin: 400px 270px 100px;
 			width: 485px;
