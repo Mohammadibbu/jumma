@@ -112,5 +112,5 @@ function online(){
     }
     //on offline
     function offline(){
-      alert("OOPS ! 😯\n Something Went Wrong!\nPlease,Check Your Network Connection....\n_ERROR_CONNECTION_");
+      alert("OOPS ! 😯\nSomething Went Wrong!\nPlease,Check Your Network Connection....\n_ERROR_CONNECTION_");
     }
