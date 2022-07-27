@@ -276,6 +276,7 @@
 			font-weight: bolder;
 			font-size: 30px !important;
 			border: 2px solid black !important;
+                        -webkit-appearance: none !important;
 		}
     #date{
 			font-family: 'Arima', cursive;
@@ -283,8 +284,8 @@
 			color: white;
 			font-weight: bolder;
 			font-size: 30px !important;
-			text-align: center !important;
-      margin-top: 0;
+			text-align: left !important;
+                        margin-top: 0;
 		}
 
 			button,form,footer{
@@ -293,7 +294,4 @@
                 .container{
                        display: none !important;
                             }
-#date_style{
--webkit-appearance: none !important;
-}
 		}
