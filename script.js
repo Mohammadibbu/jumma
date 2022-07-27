@@ -11,8 +11,8 @@
    let pass_word=document.getElementById('password');
    let loginbtn=document.getElementById('submitbtn');
    // CHANGE HERE user name and pass word!
-   var admin= "";
-   var pass= "";
+   var admin= "admin";
+   var pass= "tntj";
  	// check the user name and password...
  	if (userName.value != admin || pass_word.value != pass ) {
     // border colors
@@ -40,8 +40,8 @@
   }
      setTimeout(loginfailed,2000);
         // alert("Incorrect Details")
-        userName.value='admin';
-        pass_word.value='tntj';
+        userName.value='';
+        pass_word.value='';
  	}
  	else if (userName.value == admin || pass_word.value == pass ) {
  		
@@ -91,8 +91,8 @@ function load(){
 function printing(){
       let pwd=prompt("Please Enter your password To download 'PDF' File");
       //confirmation password
-      if (pwd!="tntj")
-      {
+      if (pwd!= "tntj"){
+        
         if (confirm("INCORRECT PASSWORD ! \n Press 'OK' to Re - Enter the password..")) {
           printing();
         }else{
@@ -105,7 +105,7 @@ function printing(){
        setTimeout(load,50000);
       }
    }
-   
+
    //on online
 function online(){
       alert("🌐Back online...");
