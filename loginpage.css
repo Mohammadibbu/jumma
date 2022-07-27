@@ -6,16 +6,16 @@
 			background: white !important;
 			align-items: center;
 			justify-content: center;
-                        min-width:960px;
+                       /* min-width:960px;*/
        
 		}
           
 		.container{
 			position: absolute;
-			margin: auto;
+			margin: 100px 150px 100px;
 			width: 455px;
 			height: auto;
-      background: #171713;
+                        background: #171713;
 			border-radius: 20px;
 			display:block;
 			box-shadow: 0 0 30px 20px greenyellow;
