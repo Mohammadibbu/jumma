@@ -11,7 +11,7 @@
 		}
 .bg-image {
   /* The image used */
-  background-image: url("download.jpg");
+  background-image: url("download.jpeg");
 
   /* Add the blur effect */
   filter: blur(8px);
@@ -27,7 +27,7 @@
 }
 		.container{
 			position: absolute;
-			margin: 400px 300px 100px;
+			margin: 400px 270px 100px;
 			width: 485px;
 			height: 500px;
                         background: #171713;
