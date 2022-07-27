@@ -14,7 +14,7 @@
 			margin: auto;
 			width: 455px;
 			height: auto;
-                        background: #171713;
+      background: #171713;
 			border-radius: 20px;
 			display:block;
 			box-shadow: 0 0 30px 20px greenyellow;
@@ -49,21 +49,21 @@
 		}
 		
 		#submitbtn{
-                        box-shadow: 0 0 5px 5px #1666f0;
-			margin: 45px 0 30px 0;
-			height: 60px;
-			width: 200px;
-			font-size: 40px;
-			color: black;
-			outline: none;
-			font-weight: bold;
-			cursor: pointer;
-			/*padding: 10px 5px 20px 5px;*/
-			font-family:arial,sans-serif;
-			background: yellow;
-			border-radius: 25px;
-			border: 2px solid black;
-			transition-duration: .5s;
+				box-shadow: 0 0 5px 5px #1666f0;
+				margin: 45px 0 30px 0;
+				height: 60px;
+				width: 200px;
+				font-size: 40px;
+				color: black;
+				outline: none;
+				font-weight: bold;
+				cursor: pointer;
+				/*padding: 10px 5px 20px 5px;*/
+				font-family:arial,sans-serif;
+				background: yellow;
+				border-radius: 25px;
+				border: 2px solid black;
+				transition-duration: .5s;
 		}
        #submitbtn:focus{
        	background: #e8f07d;
@@ -164,3 +164,136 @@
   100% { margin-left: 0rem; }
   
 }
+
+
+/*hide the content*/
+
+#content,#button{
+  
+  display: none;
+ }
+		table{
+			font-family: 'Tiro Tamil', serif;
+			border-collapse: collapse;
+		    font-weight: bolder;
+                          background-color:white;
+			margin: 3px 5px 5px 3px;		
+		}
+		
+		td,th{
+            font-family: 'Tiro Tamil', serif;
+            font-weight: bolder;
+			border: 2px solid black;
+			text-align: left;
+			font-weight: bolder;
+			font-size: 100%;
+
+		}
+		#head{
+			font-family: 'Tiro Tamil', serif;
+			background-color: green;
+			color: white;
+			font-weight: 60;
+			font-size: 25px;
+		}
+		#tntj{
+			font-family: 'Arima', cursive;
+			background-color: black;
+			color: white;
+			font-weight: bolder;
+			font-size: 25px;
+			text-align: center;
+			padding: 20px 15px 1px;
+		}
+		img{
+			border-radius: 20px;
+		}
+		select{
+			border: 1px solid white;
+			background-color: white;
+			text-align: left;
+			padding:5px;
+			font-weight: bolder;
+			font-size: 90%;
+			-webkit-appearance: none;
+			cursor: pointer;
+			font-family: 'Tiro Tamil', serif;
+		}
+		select:hover{
+			background-color: #ff1212;
+			border-radius: 20px;
+			border: 2px dashed black;
+
+		}
+		body{
+			-webkit-print-color-adjust: exact !important;
+		}
+		@media print{
+			 
+			@page{
+				size: a3;
+			}
+		table{
+			font-family: 'Tiro Tamil', serif !important;
+			border-collapse: collapse !important;	
+			/*font-weight: bolder !important;*/
+			margin: 100px 70px 100px !important;
+      background-color: white !important;
+		}
+		
+		td,th{
+			font-family: 'Tiro Tamil', serif !important;
+			border: 2px solid black;
+			text-align: left;
+			/*font-weight: bolder;*/
+			font-size: 120%;
+
+		}
+		
+		#head {
+			font-family: 'Tiro Tamil', serif !important;
+			padding: 10px !important;
+			margin: 3px 2px;
+			font-weight: bolder !important;
+			font-size: 20px !important;
+      width:auto !important;
+            
+		}
+ 
+
+		#tntj{
+		    font-family: 'Arima', cursive !important;
+			font-weight: bolder !important;
+			font-size: 30px !important;
+			text-align: center !important;
+			padding: 20px !important;
+		}
+		#date_style{
+			font-family: 'Tiro Tamil', serif;
+			background-color: black !important;
+			color: white !important;
+			text-align: center !important;
+			font-weight: bolder;
+			font-size: 30px !important;
+			border: 2px solid black !important;
+		}
+    #date{
+			font-family: 'Arima', cursive;
+			background-color: black;
+			color: white;
+			font-weight: bolder;
+			font-size: 30px !important;
+			text-align: center !important;
+      margin-top: 0;
+		}
+
+			button,form,footer{
+				display: none !important;
+			}
+                .container{
+                       display: none !important;
+                            }
+#date_style{
+-webkit-appearance: none !important;
+}
+		}
