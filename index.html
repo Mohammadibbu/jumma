@@ -53,29 +53,10 @@
 	//form validation and javascript content
 </script>
 <!-- table -->
-   <div id="content" class="print-container">
-	 	
-	<table lang="ta" align="center" >
-		<tr>
-			<th colspan="4" id="tntj" ><img src="jummahheading.JPG" alt="தமிழ்நாடு தவ்ஹீத் ஜமாஅத் - தஞ்சை தெற்கு மாவட்டம் ஜும்ஆ தாயிக்களின் விபரம்." style="width:100%;height:150px;"></th>
-		</tr>
-		<tr>
-			<th colspan="4" id="date"><strong>ஜும்ஆ நாள் :</strong><input type="date" id="date_style" >
-			</th>
-		</tr>
-		 <tr id="head" >
-			<th>S.NO</th>
-			<th >கிளை/பொறுப்பாளர்</th>
-			<th >நேரம்</th>
-			<th >தாஃயி பெயர்/தொடர்புக்கு</th>
-			
-		</tr>
-		<tr>
-			<td>1.</td>
-			<td>ஆவணம் - 9566336108 </td>
-			<td >12:30 - 01:00</td>
-			<td><select>
-				<option class="opt">NIL</option>
+<script>
+var a=document.getElementById("dhayi");
+   a.insertAdjacentHTML(afterbegin,` <select>
+				<option class="opt">NILL</option>
 				<option>அம்ஜத்கான் - 9715886738</option>
 				<option>அப்துர்ரஹ்மான் பா - 9363692343</option>
 				<option>MISc Student - 8526132121</option>
@@ -114,7 +95,30 @@
 				<option>சபீர் அலி - 9600951725</option>
 				<option>சிக்கந்தர் - 9384357357 </option>
 				<option>பாரி  - 7094907792 </option>
-			</select></td>
+			</select>  `);
+	</script>
+   <div id="content" class="print-container">
+	 	
+	<table lang="ta" align="center" >
+		<tr>
+			<th colspan="4" id="tntj" ><img src="jummahheading.JPG" alt="தமிழ்நாடு தவ்ஹீத் ஜமாஅத் - தஞ்சை தெற்கு மாவட்டம் ஜும்ஆ தாயிக்களின் விபரம்." style="width:100%;height:150px;"></th>
+		</tr>
+		<tr>
+			<th colspan="4" id="date"><strong>ஜும்ஆ நாள் :</strong><input type="date" id="date_style" >
+			</th>
+		</tr>
+		 <tr id="head" >
+			<th>S.NO</th>
+			<th >கிளை/பொறுப்பாளர்</th>
+			<th >நேரம்</th>
+			<th >தாஃயி பெயர்/தொடர்புக்கு</th>
+			
+		</tr>
+		<tr>
+			<td>1.</td>
+			<td>ஆவணம் - 9566336108 </td>
+			<td >12:30 - 01:00</td>
+			<td id="dhayi"></td>
 		</tr>
 		<tr>
 			<td>2.</td>
