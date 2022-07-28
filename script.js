@@ -38,7 +38,7 @@
          loginbtn.style.background ="yellow";
        userName.focus();
   }
-     setTimeout(loginfailed,2000);
+     setTimeout(loginfailed,1500);
         // alert("Incorrect Details")
         userName.value='';
         pass_word.value='';
@@ -64,7 +64,7 @@
           btn_table.style.display = "block";
           loginpage.style.display= "none";
         }
-      setTimeout(loginsuccess,2000);
+      setTimeout(loginsuccess,1500);
  	}
   //unnecessary part
  	else{
