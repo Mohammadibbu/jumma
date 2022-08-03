@@ -1,6 +1,12 @@
 .opt{
     text-align:center;
 }
+::placeholder{
+color:#f2da9b;
+font-family:verdana;
+font-weight:bolder;
+font-size:20px;
+}
 		
 		 body{
        
