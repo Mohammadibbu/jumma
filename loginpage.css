@@ -2,10 +2,9 @@
     text-align:center;
 }
 ::placeholder{
-color:#f2da9b;
-font-family:verdana;
-font-weight:bolder;
-font-size:20px;
+    color:#196578;
+    font-weight:bolder;
+    font-size:25px;
 }
 		
 		 body{
