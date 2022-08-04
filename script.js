@@ -130,7 +130,7 @@ function printing(){
 
 //   else{
     
-//     timeleft--;
+//      timeleft--;
 //   }
 //  }
 
