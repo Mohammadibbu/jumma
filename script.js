@@ -145,6 +145,7 @@ function online(){
       // alert("🌐Back online...");
       var online=document.getElementById('online');
       var offline=document.getElementById('offline');
+     navigator.vibrate([500,250,500]);
       offline.style.display="none";
       online.style.display="block"
       setTimeout(()=>{online.style.display="none";},2000);
@@ -154,6 +155,7 @@ function online(){
       // alert("OOPS ! 😯\n Something Went Wrong!\nPlease,Check Your Network Connection....\n_ERROR_CONNECTION_");
        var online=document.getElementById('online');
       var offline=document.getElementById('offline');
+     navigator.vibrate([500,250]);
       offline.style.display="block";
     }
 
