@@ -22,7 +22,7 @@
 			margin: 350px 270px 100px;
 			width: 485px;
 			height: 600px;
-                        background: #171713;
+      background: #171713;
 			border-radius: 20px;
 			display:block;
 			box-shadow: 0 0 30px 20px green;
@@ -86,7 +86,7 @@
        	border: 1px solid #EF9A9A;
        	display: none;
        }
-       #check,#session{
+       #check,#session,#offline{
        	display: none;
        	box-shadow: 0 0 2px 2px red;
        	margin-top: 5px;
@@ -100,7 +100,7 @@
        	border-radius: 10px;
        	border: 2px solid #Ef9A9A;
        }
-#success{
+#success,#online{
        	display: none;
        	box-shadow: 0 0 2px 2px #37eb23;
        	margin-top: 5px;
@@ -292,7 +292,7 @@
       margin-top: 0;
 		}
 
-			button,form,footer,#session{
+			button,form,footer,#session,#online,#offline{
 				display: none !important;
 			}
                 .container{
