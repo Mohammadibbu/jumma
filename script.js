@@ -12,8 +12,8 @@
    let pass_word=document.getElementById('password');
    let loginbtn=document.getElementById('submitbtn');
    // CHANGE HERE user name and pass word!
-   var admin= "";
-   var pass= "";
+   var admin= "admin";
+   var pass= "tntj";
   // check the user name and password...
   if (userName.value != admin || pass_word.value != pass ) {
     // border colors
@@ -28,6 +28,7 @@
         invalid.style.animation= "shake 0.2s ease-in-out 0s 2";
          loginbtn.style.background ="red";
        invalid.style.display = "block";
+   navigator.vibrate([500]);
   //login failed Error message
 
     function loginfailed(){
@@ -38,7 +39,7 @@
         pass_word.style.outline = "none";
          loginbtn.style.background ="yellow";
        userName.focus();
-       navigator.vibrate([250]);
+       
   }
      setTimeout(loginfailed,1500);
         // alert("Incorrect Details")
@@ -46,7 +47,7 @@
         pass_word.value='';
   }
   else if (userName.value == admin || pass_word.value == pass ) {
-    
+        navigator.vibrate([500,250]);
         userName.style.border= "4px solid #29f013";
         pass_word.style.border = "4px solid #29f013";
         userName.style.outline= "2px solid green";
@@ -91,6 +92,7 @@ function refresh(){
     }
 //print the page
 function printing(){
+      navigator.vibrate([50]);
       let pwd=prompt("Please Enter Password To download 'PDF' File");
       var session_expired=document.getElementById('session');
       //confirmation password
