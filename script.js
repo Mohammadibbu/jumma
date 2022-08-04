@@ -16,6 +16,8 @@
    var pass= "tntj";
   // check the user name and password...
   if (userName.value != admin || pass_word.value != pass ) {
+    //vibrate
+     navigator.vibrate([500]);
     // border colors
     userName.style.border= "2px solid red";
         pass_word.style.border = "2px solid red";
@@ -28,7 +30,6 @@
         invalid.style.animation= "shake 0.2s ease-in-out 0s 2";
          loginbtn.style.background ="red";
        invalid.style.display = "block";
-   navigator.vibrate([500]);
   //login failed Error message
 
     function loginfailed(){
@@ -39,7 +40,7 @@
         pass_word.style.outline = "none";
          loginbtn.style.background ="yellow";
        userName.focus();
-       
+
   }
      setTimeout(loginfailed,1500);
         // alert("Incorrect Details")
@@ -47,7 +48,9 @@
         pass_word.value='';
   }
   else if (userName.value == admin || pass_word.value == pass ) {
+         //vibrate
         navigator.vibrate([500,250]);
+
         userName.style.border= "4px solid #29f013";
         pass_word.style.border = "4px solid #29f013";
         userName.style.outline= "2px solid green";
@@ -92,7 +95,9 @@ function refresh(){
     }
 //print the page
 function printing(){
-      navigator.vibrate([50]);
+       //vibrate
+       navigator.vibrate([50]);
+
       let pwd=prompt("Please Enter Password To download 'PDF' File");
       var session_expired=document.getElementById('session');
       //confirmation password
@@ -143,19 +148,23 @@ function printing(){
    //on online
 function online(){
       // alert("🌐Back online...");
+       //vibrate
+       navigator.vibrate([500,250,500]);
+
       var online=document.getElementById('online');
       var offline=document.getElementById('offline');
-     navigator.vibrate([500,250,500]);
       offline.style.display="none";
       online.style.display="block"
       setTimeout(()=>{online.style.display="none";},2000);
     }
     //on offline
     function offline(){
+       //vibrate
+      navigator.vibrate([500,250,500,250,500]);
+
       // alert("OOPS ! 😯\n Something Went Wrong!\nPlease,Check Your Network Connection....\n_ERROR_CONNECTION_");
        var online=document.getElementById('online');
       var offline=document.getElementById('offline');
-     navigator.vibrate([500,250]);
       offline.style.display="block";
     }
 
