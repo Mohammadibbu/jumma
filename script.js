@@ -49,7 +49,7 @@
   }
   else if (userName.value == admin || pass_word.value == pass ) {
          //vibrate
-        navigator.vibrate([500,150,500]);
+        navigator.vibrate([200,50,200,50,200]);
 
         userName.style.border= "4px solid #29f013";
         pass_word.style.border = "4px solid #29f013";
@@ -149,7 +149,7 @@ function printing(){
 function online(){
       // alert("🌐Back online...");
        //vibrate
-       navigator.vibrate([500,150,500]);
+       navigator.vibrate([250,150,250]);
 
       var online=document.getElementById('online');
       var offline=document.getElementById('offline');
@@ -160,7 +160,7 @@ function online(){
     //on offline
     function offline(){
        //vibrate
-      navigator.vibrate([500,100,500,]);
+      navigator.vibrate([300,100,300,]);
 
       // alert("OOPS ! 😯\n Something Went Wrong!\nPlease,Check Your Network Connection....\n_ERROR_CONNECTION_");
        var online=document.getElementById('online');
