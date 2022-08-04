@@ -86,7 +86,7 @@
        	border: 1px solid #EF9A9A;
        	display: none;
        }
-       #check{
+       #check,#session{
        	display: none;
        	box-shadow: 0 0 2px 2px red;
        	margin-top: 5px;
@@ -226,7 +226,7 @@
 		}
 		select:hover{
 			background-color: #ff1212;
-			border-radius: 20px;
+			border-radius: 15px;
 			border: 2px dashed black;
 
 		}
@@ -292,7 +292,7 @@
       margin-top: 0;
 		}
 
-			button,form,footer{
+			button,form,footer,#session{
 				display: none !important;
 			}
                 .container{
