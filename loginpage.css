@@ -117,11 +117,12 @@
        	color: white;
        	font-weight: bold;
        	padding: 10px 8px;
-       	background: #29f013;
+       	background:#41ab33 ;
        	text-align: center;
        	border-radius: 10px;
        	border: 2px solid #1e7d14;
        }
+/*#29f013*/
 #button{
 	font-family: 'Arima', cursive;
   background-color: #4CAF50;
