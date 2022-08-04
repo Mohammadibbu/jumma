@@ -27,7 +27,7 @@
       background: #171713;
 			border-radius: 20px;
 			display:block;
-			box-shadow: 0 0 30px 20px green;
+			box-shadow: 0 0 30px 20px blue;
                        
 		}
          
@@ -38,14 +38,10 @@
 		label{
 			font-size: 30px;
 			margin: 5px 0;
-			/*color:white;*/
+	    color: #84e3b0;
 			font-weight: bold;
 			font-family: 'Tiro Tamil', serif;
-			background: linear-gradient(to left,#328787,#1bf7f7,#7038f2,#e038f2); 
-    -webkit-background-clip: text; 
-
-    color: transparent;
-
+			
 		}
 		.login_form input{
 			font-family: 'Tiro Tamil', serif;
