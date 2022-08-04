@@ -12,8 +12,8 @@
    let pass_word=document.getElementById('password');
    let loginbtn=document.getElementById('submitbtn');
    // CHANGE HERE user name and pass word!
-   var admin= "admin";
-   var pass= "tntj";
+   var admin= "";
+   var pass= "";
   // check the user name and password...
   if (userName.value != admin || pass_word.value != pass ) {
     // border colors
@@ -139,11 +139,19 @@ function printing(){
 
    //on online
 function online(){
-      alert("🌐Back online...");
+      // alert("🌐Back online...");
+      var online=document.getElementById('online');
+      var offline=document.getElementById('offline');
+      offline.style.display="none";
+      online.style.display="block"
+      setTimeout(()=>{online.style.display="none";},2000);
     }
     //on offline
     function offline(){
-      alert("OOPS ! 😯\n Something Went Wrong!\nPlease,Check Your Network Connection....\n_ERROR_CONNECTION_");
+      // alert("OOPS ! 😯\n Something Went Wrong!\nPlease,Check Your Network Connection....\n_ERROR_CONNECTION_");
+       var online=document.getElementById('online');
+      var offline=document.getElementById('offline');
+      offline.style.display="block";
     }
 
  
