@@ -85,7 +85,7 @@ function showpassword() {
 
 //Session timeout
 function refresh(){
-    // alert("_SESSION_EXPIRED_\n\n_PLEASE RE-LOGIN🔄_");
+    alert("_SESSION_EXPIRED_\n\n_PLEASE RE-LOGIN🔄_");
     location.reload();
     }
 //print the page
@@ -103,33 +103,35 @@ function printing(){
       }else{
         alert("_AUTHENTICATED SUCCESSFULLY_✔️\n\nReady to Previewing your PDF File...")
         print();
-       // setTimeout(load,50000);
+       setTimeout(refresh,50000);
      }
    }
 //session timeout
-function session_expired() {
-      // body...
-      var btn_table=document.getElementById('button');
-       var session_expired=document.getElementById('session');
-       var timeleft=60;
-       session_expired.style.display="block";
-     var timeid=setInterval(countdown,1000);
- function countdown(){
-  if (timeleft==0) {
-    clearTimeout(timeid);
-    session_expired.style.display="none";
-    refresh();}
-  else if(timeleft<=15){
-    btn_table.style.display='none';
-    session_expired.innerHTML='Your Session Expired in '+ timeleft + ' Seconds ! PLEASE RE-LOGIN🔄 ...';
-    timeleft--;
-  }
 
-  else{
+ function session_expired() {
+  alert("Your Session is About to end shortly !")
+//       // body...
+//       var btn_table=document.getElementById('button');
+//        var session_expired=document.getElementById('session');
+//        var timeleft=60;
+//        session_expired.style.display="block";
+//      var timeid=setInterval(countdown,1000);
+//  function countdown(){
+//   if (timeleft==0) {
+//     clearTimeout(timeid);
+//     session_expired.style.display="none";
+//     refresh();}
+//   else if(timeleft<=15){
+//     btn_table.style.display='none';
+//     session_expired.innerHTML='Your Session Expired in '+ timeleft + ' Seconds ! PLEASE RE-LOGIN🔄 ...';
+//     timeleft--;
+//   }
+
+//   else{
     
-    timeleft--;
-  }
- }
+//     timeleft--;
+//   }
+//  }
 
 }
 
