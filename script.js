@@ -149,7 +149,7 @@ function printing(){
 function online(){
       // alert("🌐Back online...");
        //vibrate
-       navigator.vibrate([70,10,70]);
+       navigator.vibrate([70,100,70]);
 
       var online=document.getElementById('online');
       var offline=document.getElementById('offline');
@@ -160,7 +160,7 @@ function online(){
     //on offline
     function offline(){
        //vibrate
-      navigator.vibrate([300,100,300,]);
+      navigator.vibrate([2500,50,250,]);
 
       // alert("OOPS ! 😯\n Something Went Wrong!\nPlease,Check Your Network Connection....\n_ERROR_CONNECTION_");
        var online=document.getElementById('online');
