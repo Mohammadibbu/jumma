@@ -49,7 +49,7 @@
   }
   else if (userName.value == admin || pass_word.value == pass ) {
          //vibrate
-        navigator.vibrate([500,250]);
+        navigator.vibrate([500,250,500]);
 
         userName.style.border= "4px solid #29f013";
         pass_word.style.border = "4px solid #29f013";
