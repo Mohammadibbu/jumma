@@ -12,8 +12,8 @@
    let pass_word=document.getElementById('password');
    let loginbtn=document.getElementById('submitbtn');
    // CHANGE HERE user name and pass word!
-   var admin= "";
-   var pass= "";
+   var admin= "admin";
+   var pass= "tntj";
   // check the user name and password...
   if (userName.value != admin || pass_word.value != pass ) {
     // border colors
