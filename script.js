@@ -149,7 +149,7 @@ function printing(){
 function online(){
       // alert("🌐Back online...");
        //vibrate
-       navigator.vibrate([250,150,250]);
+       
 
       var online=document.getElementById('online');
       var offline=document.getElementById('offline');
