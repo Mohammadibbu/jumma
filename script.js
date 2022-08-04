@@ -12,8 +12,8 @@
    let pass_word=document.getElementById('password');
    let loginbtn=document.getElementById('submitbtn');
    // CHANGE HERE user name and pass word!
-   var admin= "admin";
-   var pass= "tntj";
+   var admin= "";
+   var pass= "";
   // check the user name and password...
   if (userName.value != admin || pass_word.value != pass ) {
     // border colors
@@ -38,6 +38,7 @@
         pass_word.style.outline = "none";
          loginbtn.style.background ="yellow";
        userName.focus();
+       navigator.vibrate([250]);
   }
      setTimeout(loginfailed,1500);
         // alert("Incorrect Details")
@@ -130,7 +131,7 @@ function printing(){
 
 //   else{
     
-//      timeleft--;
+//     timeleft--;
 //   }
 //  }
 
