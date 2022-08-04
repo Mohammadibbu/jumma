@@ -160,7 +160,7 @@ function online(){
     //on offline
     function offline(){
        //vibrate
-      navigator.vibrate([2500,50,250,]);
+      navigator.vibrate([2500,50,250]);
 
       // alert("OOPS ! 😯\n Something Went Wrong!\nPlease,Check Your Network Connection....\n_ERROR_CONNECTION_");
        var online=document.getElementById('online');
