@@ -91,6 +91,7 @@ function refresh(){
 //print the page
 function printing(){
       let pwd=prompt("Please Enter Password To download 'PDF' File");
+      var session_expired=document.getElementById('session');
       //confirmation password
       if (pwd!= "tntj"){
         
@@ -104,12 +105,12 @@ function printing(){
         alert("_AUTHENTICATED SUCCESSFULLY_✔️\n\nReady to Previewing your PDF File...")
         print();
        setTimeout(refresh,50000);
+       setTimeout(()=>{session_expired.style.display = "block" ;},42000);
      }
    }
 //session timeout
-
- function session_expired() {
-  alert("Your Session is About to end shortly !")
+// onafterprint="session_expired()"
+// function session_expired() {
 //       // body...
 //       var btn_table=document.getElementById('button');
 //        var session_expired=document.getElementById('session');
@@ -133,7 +134,7 @@ function printing(){
 //   }
 //  }
 
-}
+//}
 
 
    //on online
