@@ -119,14 +119,14 @@ function session_expired() {
     clearTimeout(timeid);
     session_expired.style.display="none";
     refresh();}
-  else if(timeleft==5||timeleft==4||timeleft==3||timeleft==2||timeleft==1){
+  else if(timeleft<=15){
     btn_table.style.display='none';
     session_expired.innerHTML='Your Session Expired in '+ timeleft + ' Seconds ! PLEASE RE-LOGIN🔄 ...';
     timeleft--;
   }
 
   else{
-    session_expired.innerHTML='Your Session Expired in '+ timeleft + ' Seconds !';
+    
     timeleft--;
   }
  }
