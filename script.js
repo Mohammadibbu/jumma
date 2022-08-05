@@ -82,14 +82,17 @@
 function showpassword() {
   var x = document.getElementById("password");
   if (x.type === "password") {
+    navigator.vibrate([70]);
     x.type = "text";
   } else {
+    navigator.vibrate([70]);
     x.type = "password";
   }
 }
 
 //Session timeout
 function refresh(){
+    navigator.vibrate([200]);
     alert("_SESSION_EXPIRED_\n\n_PLEASE RE-LOGIN🔄_");
     location.reload();
     }
@@ -149,7 +152,7 @@ function printing(){
 function online(){
       // alert("🌐Back online...");
        //vibrate
-       navigator.vibrate([70,100,70]);
+       navigator.vibrate([100,100,100]);
 
       var online=document.getElementById('online');
       var offline=document.getElementById('offline');
@@ -160,7 +163,7 @@ function online(){
     //on offline
     function offline(){
        //vibrate
-      navigator.vibrate([250,50,250]);
+      navigator.vibrate([200,100,200]);
 
       // alert("OOPS ! 😯\n Something Went Wrong!\nPlease,Check Your Network Connection....\n_ERROR_CONNECTION_");
        var online=document.getElementById('online');
