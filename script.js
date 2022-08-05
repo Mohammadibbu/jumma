@@ -17,7 +17,7 @@
   // check the user name and password...
   if (userName.value != admin || pass_word.value != pass ) {
     //vibrate
-     navigator.vibrate([400]);
+     navigator.vibrate([350]);
     // border colors
     userName.style.border= "2px solid red";
         pass_word.style.border = "2px solid red";
@@ -82,10 +82,10 @@
 function showpassword() {
   var x = document.getElementById("password");
   if (x.type === "password") {
-    navigator.vibrate([70]);
+    navigator.vibrate([50]);
     x.type = "text";
   } else {
-    navigator.vibrate([70]);
+    navigator.vibrate([50]);
     x.type = "password";
   }
 }
