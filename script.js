@@ -116,7 +116,7 @@ function printing(){
         alert("_AUTHENTICATED SUCCESSFULLY_✔️\n\nReady to Previewing your PDF File...")
         print();
        setTimeout(refresh,50000);
-       setTimeout(()=>{session_expired.style.display = "block" ;navigator.vibrate([300,100,600]);},42000);
+       setTimeout(()=>{session_expired.style.display = "block" ;navigator.vibrate([300,100,600]);},40000);
      }
    }
 //session timeout
