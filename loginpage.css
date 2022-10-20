@@ -140,11 +140,12 @@
     }
     #date{
 			font-family: 'Arima', cursive;
-			background-color: black;
+			background-color: #493306;
 			color: white;
 			font-weight: bolder;
 			font-size: 20px;
 			text-align: center;
+			padding: 5px 10px 5px;
 		}
 		 #date_style{
 			font-family: 'Tiro Tamil', serif;
@@ -193,7 +194,9 @@
                           background-color:white;
 			margin: 10px 50px 100px 50px;		
 		}
-		
+		td{
+			background-color: #ead5ab;
+		}
 		td,th{
             font-family: 'Tiro Tamil', serif;
             font-weight: bolder;
@@ -205,26 +208,26 @@
 		}
 		#head{
 			font-family: 'Tiro Tamil', serif;
-			background-color: green;
+			background-color: #c1860f;
 			color: white;
 			font-weight: 60;
 			font-size: 25px;
 		}
 		#tntj{
 			font-family: 'Arima', cursive;
-			background-color: black;
+			background-color: #493306;
 			color: white;
 			font-weight: bolder;
 			font-size: 25px;
 			text-align: center;
-			padding: 20px 15px 1px;
+			padding: 10px 15px 1px;
 		}
-		img{
-			border-radius: 20px;
-		}
+		/*img{
+			border-radius:20px;
+		}*/
 		select{
-			border: 1px solid white;
-			background-color: white;
+			border: 1px solid #ead5ab;
+			background-color: #ead5ab;
 			text-align: left;
 			padding:5px;
 			font-weight: bolder;
@@ -263,7 +266,7 @@
 			font-family: 'Tiro Tamil', serif !important;
 			border-collapse: collapse !important;	
 			/*font-weight: bolder !important;*/
-			margin: 90px 60px 90px !important;
+			margin: 80px 45px 80px !important;
       background-color: white !important;
 		}
 		
@@ -288,24 +291,25 @@
  
 
 		#tntj{
+			color: white;
 		    font-family: 'Arima', cursive !important;
 			font-weight: bolder !important;
 			font-size: 30px !important;
 			text-align: center !important;
-			padding: 20px !important;
+			padding: 10px !important;
 		}
 		#date_style{
 			font-family: 'Tiro Tamil', serif;
-			background-color: black !important;
+			background-color: #493306 !important;
 			color: white !important;
 			text-align: center !important;
 			font-weight: bolder;
 			font-size: 30px !important;
-			border: 2px solid black !important;
+			border: 2px solid  #493306 !important;
 		}
     #date{
 			font-family: 'Arima', cursive;
-			background-color: black;
+			background-color: #493306;
 			color: white;
 			font-weight: bolder;
 			font-size: 30px !important;
