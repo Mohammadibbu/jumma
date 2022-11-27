@@ -255,17 +255,19 @@
 </div>
 <!-- END OF THE TABLE -->
 <!-- options template -->
+<!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
-	//remove duplicate values.....
+ //remove duplicate values........
 $(document).ready(function(){
 $('select').on('change', function(event ) {
    var prevValue = $(this).data('previous');
-$('select').not(this).find('option[value="'+prevValue+'"]').show();    
+$('select').not(this).find('option[value="'+prevValue+'"]').removeAttr('disabled');    
    var value = $(this).val();
   $(this).data('previous',value); $('select').not(this).find('option[value="'+value+'"]').attr('disabled', 'disabled');
 });
 });
+
 	// dhayi names change HERE....
 	var dhayi_names=`<select>
         <optgroup label="---தாஃயிக்களின் பெயர்கள்---">
@@ -290,17 +292,14 @@ $('select').not(this).find('option[value="'+prevValue+'"]').show();
         <option value="14">ஆவணம் ரியாஸ் B.Tech - 9994585432</option>
         <option value="15">ஆபிதீன் B.A - 9566788134</option>
 </optgroup> 
-
 <optgroup label="--இ--">
         <option value="16">இனாமுல் MISc - 9791759705</option>
         <option value="17">இக்பால் - 8754869528</option>
         <option value="18">இலியாஸ் MISc - 8668055942</option>
 </optgroup>
-
 <optgroup label="--ஃ--">
-        <option value="19">ஃபஜுல்ரஹ்மான் - 9491085851</option>
+        <option value="19">ஃபஜுல்ரஹ்மான் - 8939198103</option>
 </optgroup>
-
 <optgroup label="--ச--">
         <option value="20">சபீர் அலி MISc - 9600951725</option>
 	<option value="21">சலீம் MISc - 9500796289</option>
@@ -308,7 +307,6 @@ $('select').not(this).find('option[value="'+prevValue+'"]').show();
         <option value="23">செய்யத் முஸ்தபா B.Tech - 9715113441</option>
         <option value="24">சேக் அப்துல்காதர் B.E - 8807137959</option>
 </optgroup>
-
 <optgroup label="--த--">
 	<option value="25">தவ்ஃபீக் இமாம் - 9751872376</option>
 </optgroup>
@@ -316,51 +314,44 @@ $('select').not(this).find('option[value="'+prevValue+'"]').show();
 	<option value="26">நவாப்ஷா - 8838370094</option>
         <option value="27">நுஹ்மான் - 8870880618</option>
 </optgroup>
-
 <optgroup label="--ப--">
         <option value="28">பட்டுக்கோட்டை பாரூக் - 6382236258</option>
-		<option value="29">பாரீஸ் B.Sc - 8270912463</option>
-		<option value="30">பாரூக் MISc - 9994256863</option>
-		<option value="31">பாரி  - 7094907792 </option>
-		<option value="32">பக்கீர் முகமது - 9994469222</option>
-		<option value="33">பஷீர்  - 9944884147</option>
+	<option value="29">பாரீஸ் B.Sc - 8270912463</option>
+	<option value="30">பாரூக் MISc - 9994256863</option>
+	<option value="31">பாரி  - 7094907792 </option>
+	<option value="32">பக்கீர் முகமது - 9994469222</option>
+	<option value="33">பஷீர்  - 9944884147</option>
 </optgroup>
-
 <optgroup label="--ம--">
-		<option value="34">முகமது அதிரை - 9600649363</option>
-		<option value="35">முகமது ஒலி - 9952056444</option>
-		<option value="36">முஜிபுர் ரஹ்மான் - 9994588100</option>
+	<option value="34">முகமது அதிரை - 9600649363</option>
+	<option value="35">முகமது ஒலி - 9952056444</option>
+	<option value="36">முஜிபுர் ரஹ்மான் - 9994588100</option>
 </optgroup>
-
 <optgroup label="--ர--">
-		<option value="37">ரஹீமுல்லாஹ் - 8610657269</option>
+	<option value="37">ரஹீமுல்லாஹ் - 8610657269</option>
+	<option value="38">ராஜிக் முகமது  - 9943447195</option>
 </optgroup>
-
 <optgroup label="--வ--">				
-		<option value="38">வல்லம் பாட்சா - 9443188653</option>
-		<option value="39">வல்லம் ஜாபர் - 9944191505</option>
+	<option value="39">வல்லம் பாட்சா - 9443188653</option>
+	<option value="40">வல்லம் ஜாபர் - 9944191505</option>
 </optgroup>
-
 <optgroup label="--ஜ--">				
-		<option value="40">ஜாபர் அலி - 9361384359</option>
-		<option value="41">ஜியாவுதீன் MBA, LLB - 9791904549</option>
-		<option value="42">ஜுபைர் DME - 8012413053</option>
+	<option value="41">ஜாபர் அலி - 9361384359</option>
+	<option value="42">ஜாபர் சாதிக் - 9940946309</option>
+	<option value="43">ஜியாவுதீன் MBA, LLB - 9791904549</option>
+	<option value="44">ஜுபைர் DME - 8012413053</option>
 </optgroup>
-
 <optgroup label="--ஹ--">
-		<option value="43">ஹிதாயதுல்லஹ் - 9787537620</option>
-		<option value="44">ஹஃபீல் B.Tech - 9384656794</option>
-		<option value="45">ஹபிப் புதுப்பட்டினம் - 9486605911</option>
+	<option value="45">ஹிதாயதுல்லஹ் - 9787537620</option>
+	<option value="46">ஹஃபீல் B.Tech - 9384656794</option>
+	<option value="47">ஹபிப் புதுப்பட்டினம் - 9486605911</option>
 </optgroup>
-
 <optgroup label="--ஷ--">				
-		<option value="46">ஷிஹாபுதீன் - 6381386077</option>
+	<option value="48">ஷிஹாபுதீன் - 6381386077</option>
 </optgroup>
-
 <optgroup label="others">
-		<option value="47">MISc Student - 8526132121</option>
+	<option value="49">MISc Student - 8526132121</option>
 </optgroup>
-
 </optgroup>
 </select>`;
  document.getElementById("kilai_1").insertAdjacentHTML("afterbegin",dhayi_names);
