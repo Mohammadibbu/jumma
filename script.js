@@ -153,7 +153,7 @@ function online(){
       // alert("🌐Back online...");
        //vibrate
        navigator.vibrate([100,100,100]);
-
+      document.getElementById("button").setAttribute("disabled", "false"); 
       var online=document.getElementById('online');
       var offline=document.getElementById('offline');
       offline.style.display="none";
@@ -164,7 +164,7 @@ function online(){
     function offline(){
        //vibrate
       navigator.vibrate([200,100,200]);
-
+       document.getElementById("button").setAttribute("disabled", "true"); 
       // alert("OOPS ! 😯\n Something Went Wrong!\nPlease,Check Your Network Connection....\n_ERROR_CONNECTION_");
        var online=document.getElementById('online');
       var offline=document.getElementById('offline');
