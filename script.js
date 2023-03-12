@@ -153,18 +153,19 @@ function online(){
       // alert("🌐Back online...");
        //vibrate
        navigator.vibrate([100,100,100]);
-      document.getElementById("button").setAttribute("disabled", "false"); 
+      
       var online=document.getElementById('online');
       var offline=document.getElementById('offline');
       offline.style.display="none";
-      online.style.display="block"
+      online.style.display="block";
+$('#button').removeAttr('disabled');
       setTimeout(()=>{online.style.display="none";},2000);
     }
     //on offline
     function offline(){
        //vibrate
       navigator.vibrate([200,100,200]);
-       document.getElementById("button").setAttribute("disabled", "true"); 
+       $('#button').attr('disabled','disabled');
       // alert("OOPS ! 😯\n Something Went Wrong!\nPlease,Check Your Network Connection....\n_ERROR_CONNECTION_");
        var online=document.getElementById('online');
       var offline=document.getElementById('offline');
