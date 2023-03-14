@@ -3,6 +3,7 @@
  document.getElementById("submitbtn").addEventListener("click",function(event){event.preventDefault()});
  // validate the form
  function validate() {
+  let jpg=document.getElementById('dwnld');
   let content_table=document.getElementById('content');
   let btn_table=document.getElementById('button');
   let invalid=document.getElementById('check');
@@ -64,7 +65,8 @@
         //alert("✳️👍Login Successfully👍✳️");
         //login success message
         function loginsuccess(){
-    autoclick();
+    autoClick();
+jpg.style.display = "block" ;
           loginbtn.style.color ="black";
           loginbtn.style.background ="yellow";
         content_table.style.display = "block" ;
