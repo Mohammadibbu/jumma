@@ -65,8 +65,8 @@
         //alert("✳️👍Login Successfully👍✳️");
         //login success message
         function loginsuccess(){
-    autoClick();
-//jpg.style.display = "block" ;
+         
+         //jpg.style.display = "block" ;
           loginbtn.style.color ="black";
           loginbtn.style.background ="yellow";
         content_table.style.display = "block" ;
@@ -74,6 +74,7 @@
           loginpage.style.display= "none";
         }
       setTimeout(loginsuccess,1500);
+     autoClick();
   }
   //unnecessary part
   else{
