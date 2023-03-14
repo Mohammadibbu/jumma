@@ -21,7 +21,7 @@
 <!-- style for whole page -->
 	<link rel="stylesheet" type="text/css" href="loginpage.css">
 </head>
-<body onoffline="offline()" ononline="online()">
+<body onoffline="offline()" ononline="online()" onload="autoclick();">
  
 	<!-- loginpage -->
 	<div class="container" id="form_container">
@@ -252,13 +252,33 @@
  </tr>
 </tbody>
 	</table>
-</div>
+</div><br><br>
+<a id="dwnld">Download image</a> 
 <!-- END OF THE TABLE -->
 <!-- options template -->
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
+// Download img jumma chart
+//Code for download qrCode here...
+function autoClick(){
+        $("#dwnld").click();
+      }
+      $(document).ready(function(){
+        var element = $("#content");
 
+        $("#dwnld").on('click', function(){
+
+          html2canvas(element, {
+            onrendered: function(canvas) {
+              var imageData = canvas.toDataURL("image/jpg");
+              var newData = imageData.replace(/^data:image\/jpg/, "data:application/octet-stream");
+              $("#dwnld").attr("download", "jummahchart.jpg").attr("href", newData);
+            }
+          });
+
+        });
+      });
  //remove duplicate values........
 $(document).ready(function(){
 $('select').on('change', function(event ) {
