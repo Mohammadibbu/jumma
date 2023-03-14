@@ -64,6 +64,7 @@
         //alert("✳️👍Login Successfully👍✳️");
         //login success message
         function loginsuccess(){
+    autoclick();
           loginbtn.style.color ="black";
           loginbtn.style.background ="yellow";
         content_table.style.display = "block" ;
